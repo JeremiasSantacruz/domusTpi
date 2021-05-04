@@ -2,17 +2,16 @@
 layout: default
 ---
 <h1 class="primary">Cargar propiedad</h1>
-
-<form>
-    <style>
+ <style>
         body {
-          background: #0b2e59;
+            background: dark;
         }
-        </style> 
+    </style>
+<form>
     <div class="form-row">
         <label class="form-label" for="tipo" name="tipo">Seleccionar el tipo de la propiedad: </label>
         <select name="tipo">
-            
+
             {% for tipo in site.data.tipos %}
             <option value="{{tipo.tipo}}">{{tipo.tipo}}</option>
             {% endfor %}
@@ -22,9 +21,9 @@ layout: default
 
     <h3>Ubicacion</h3>
     <div class="row">
-        <div class="form-group col-3">
+        <div class="form-group  needs-validation col-3">
             <label class="form-label" for="pais">Pais: </label>
-            <input class="form-control" list="pais" name="pais" class="form-control">
+            <input class="form-control" list="pais" name="pais" class="form-control" required id="pais">
             <datalist id="pais">
 
                 {% for pais in site.data.paises %}
@@ -32,14 +31,26 @@ layout: default
                 {% endfor %}
 
             </datalist>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Mal
+            </div>
         </div>
         <div class="form-group col-3" id="provincias">
             <label class="form-label" for="provincia">Provincia: </label>
             <input class="form-control" name="provincia" class="form-control">
         </div>
         <div class="form-group col-3">
-            <label class="form-label" for="localidad">Localidad: </label>
-            <input class="form-control" name="localidad">
+            <label class="form-label" for="localidad" >Localidad: </label>
+            <input class="form-control" name="localidad" required>
+            <div class="valid-feedback">
+                Looks good!
+            </div>
+            <div class="invalid-feedback">
+                Mal
+            </div>
         </div>
         <div class="form-group col-3">
             <label class="form-label" for="CP">CP: </label>
@@ -110,16 +121,16 @@ layout: default
     <h4>Contrato</h4>
     <div class="row">
         <div class="form-group col-6">
-        <label class="form-label" for="contrato">Seleccione el tipo de contrato:</label>
-        <select name="contrato">
-            {% for tipo in site.data.contrato %}
-            <option value="{{tipo.nombre}}">{{tipo.nombre}}</option>
-            {% endfor %}
-        </select>
+            <label class="form-label" for="contrato">Seleccione el tipo de contrato:</label>
+            <select name="contrato">
+                {% for tipo in site.data.contrato %}
+                <option value="{{tipo.nombre}}">{{tipo.nombre}}</option>
+                {% endfor %}
+            </select>
         </div>
         <div class="form-group col-6">
-        <label class="form-label" for="precio">Precio: </label>
-        <input class="form-control" name="precio" type="number">
+            <label class="form-label" for="precio">Precio: </label>
+            <input class="form-control" name="precio" type="number">
         </div>
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
