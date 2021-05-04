@@ -6,31 +6,34 @@ layout: default
 <form>
     <style>
         body {
-          background: #a87888;
+          background: #0b2e59;
         }
         </style> 
     <div class="form-row">
         <label class="form-label" for="tipo" name="tipo">Seleccionar el tipo de la propiedad: </label>
         <select name="tipo">
+            
             {% for tipo in site.data.tipos %}
             <option value="{{tipo.tipo}}">{{tipo.tipo}}</option>
             {% endfor %}
+
         </select>
     </div>
 
     <h3>Ubicacion</h3>
     <div class="row">
         <div class="form-group col-3">
-            <label class="form-label" for="pais">Pais: </label class="form-label" class="form-label class="
-                form-label"">
+            <label class="form-label" for="pais">Pais: </label>
             <input class="form-control" list="pais" name="pais" class="form-control">
             <datalist id="pais">
+
                 {% for pais in site.data.paises %}
                 <option value="{{pais.name}}">{{pais.name}}</option>
                 {% endfor %}
+
             </datalist>
         </div>
-        <div class="form-group col-3">
+        <div class="form-group col-3" id="provincias">
             <label class="form-label" for="provincia">Provincia: </label>
             <input class="form-control" name="provincia" class="form-control">
         </div>
@@ -121,3 +124,7 @@ layout: default
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
+
+<script>
+
+</script>

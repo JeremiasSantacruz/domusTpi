@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<style>
+    body {
+        background-image: #ffffff;
+        /* #2a044a, #0b2e59, #0d6759, #7ab317, #a0c55f */
+    }
+</style>
+<div class="card mt-5 col-6 mx-auto">
+    <img src="https:/via.placeholder.com/600x300/7ab317" class="card-img" alt="...">
+    <div class="card-img-overlay">
+        <div class="card-header">
+            <ul class="nav nav-pills card-header-pills">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="true" href="#">Ventas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Alquileres</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body col-6 ">
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text" class="form-control" placeholder="Direccion" aria-describedby="basic-addon1">
+                <button class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-flex mt-5">
+    <div class="card-group">
+        {% for casa in site.data.casas %}
+        <div class="card m-3">
+            <img src="https://via.placeholder.com/200" class="card-img-top" alt="...">
+            <div class="card-header">
+                {{casa.contrato}}
+            </div>
+            <div class="card-body">
+                {{casa.desc}}
+            </div>
+            <div class="card-footer">
+                <div>Precio: {{casa.precio}}</div>
+                <div class="text-end">
+                    <button class="btn btn-primary float-right">Ver</button>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
