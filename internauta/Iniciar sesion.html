@@ -12,35 +12,30 @@
 </head>
 <body>
   <style>
-    body{
-      background-image: url(fondo.jpg) ;
-    }
+    body {background-image: url(fondo.jpg);}
+    .cuerpo {position: relative; top: 100px;}
   </style>
-  <div class="container-fluid mt-5">
-    <h1 class="text-center">Iniciar sesion</h1>
+  <div class="cuerpo container-fluid mt-5">
+    <h1 class="text-center text-white">Iniciar sesion</h1>
     <br>
     <div class="mb-3 row">
-      <label for="ststicNombre" class="col-sm-6 col-form-label text-end">Nombre</label>
+      <label for="ststicNombre" class="col-sm-6 col-form-label text-white text-end"><b>Nombre</b></label>
       <div class="col-sm-6">
         <input type="text" class="form-control" id="input" placeholder="Username" style="width: 200px;">
       </div>
     </div>
     <div class="mb-3 row">
-      <label for="inputPassword" class="col-sm-6 col-form-label text-end">Contraseña</label>
+      <label for="inputPassword" class="col-sm-6 col-form-label text-end text-white"><b>Contraseña</b></label>
       <div class="col-sm-6">
         <input type="password" class="form-control " id="inputPassword" placeholder="Password" style="width: 200px;">
       </div>
     </div>
     <div class="row sm-3">
-      <div class="col-lg-5"></div>
-      <div class="col-lg-3 align-items-center">
+      <div class="col-lg text-center">
         <a href="#" class="btn btn-primary" type="button">Iniciar Sesion</a>
       </div>
-      <div class="col-lg-5"></div>
     </div>
   </div>
-  
-
   <!--Link de java-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
