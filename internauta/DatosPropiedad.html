@@ -15,19 +15,18 @@
     <!-- Encabezado -->
     <nav class="navbar navbar-dark" role= "encabezado">
       <style>
-        nav {background: rgb(56, 58, 211);}
-        button {background: rgb(56, 58, 211);}
-        .btn-group {position:relative; top: 40px;}
-        .d-flex {position:relative; bottom: 40px;}
+          nav {background: rgb(216, 110, 10);}
+          .btn-group {position:relative; top: 40px;}
+          .d-flex {position:relative; bottom: 40px;}
       </style>
       <!-- Navbar content -->
       <div class="container-fluid">
         <a class="navbar-brand">
-          <img src = "Logo.jpeg" shape = "rect" width = 80 height = 80>
+            <img src = "Logo.jpeg" shape = "rect" width = 80 height = 80>
         </a>
         <div class="btn-group" role="group" aria-label="Basic outlined example">
-          <button type="button" class="btn"><b>Principal</b></button>
-          <button type="button" class="btn"><b>Inmuebles</b></button>
+            <a type="button" href="Principal.html" class="btn"><b>Principal</b></a>
+            <a type="button" href="Inmuebles.html" class="btn"><b>Inmuebles</b></a>
         </div>
         <form class="d-flex">
           <a class="btn" href="Iniciar sesion.html"><b>Iniciar sesion</b></a>
@@ -36,122 +35,117 @@
       </div>
     </nav>
     <!-- Cuerpo --> 
-    <div class="container">
+    <div class="container-fluid">
       <style>
-        body {background: rgb(15, 2, 71);}
-        button {background: rgb(15, 2, 71);}
+        body {background: rgb(131, 131, 131);}
+        .cita {position: relative; top: 25px;}
       </style>
       <!--Primera fila-->
       <div class="container">
         <div class="row mt-5">
-          <div class="col-6">
-            <img src="https:/via.placeholder.com/500x300/" class="card-img" alt="...">
+          <div class="col-lg-6">
+            <img src="fondo.jpg" class="card-img" alt="..." height="350" width="600">
           </div>
-          <div class="col-6">
-            <h2 class="text-white"><b>Una casa mediana</b></h2>.
+          <div class="col-sm-6">
+            <h2><b>Una casa mediana</b></h2>.
             <br>
-            <h4 class="text-white">Tipo de Inmueble: Casa</h4>
-            <h4 class="text-white">Opciones de contrato: Venta</h4>
-            <h4 class="text-white">Cantidad de ambientes: 5</h4>
+            <h4>Tipo de Inmueble: Casa</h4>
+            <h4>Opciones de contrato: Venta</h4>
+            <h4>Cantidad de ambientes: 5</h4>
             <br>
-            <div class="row text-start text-white">
-              <div class="col-4">
+            <div class="row text-start">
+              <div class="col-md-4">
                 <h4>Dormitorios: 2</h4>
               </div>
-              <div class="col-3">
+              <div class="col-md-3">
                 <h4>Baños: 1</h4>
               </div>
-              <div class="col-5">
+              <div class="col-md-5">
                 <h4>Precio: $2.000.000</h4>
               </div>
             </div>
             <br>
-            <h4 class="text-white">Direccion: Av. San Maritn 856, Resistencia, Chaco</h4>
+            <h4>Direccion: Av. San Maritn 856, Resistencia, Chaco</h4>
             <div class="row">
               <div class="col text-center">
-                <a href="https://www.google.com/maps/place/Av.+San+Mart%C3%ADn+856,+H3504EJA+Resistencia,+Chaco/@-27.4615719,-58.9920113,17z/data=!3m1!4b1!4m5!3m4!1s0x94450c9333b63f87:0xc284443d177f5cb3!8m2!3d-27.4615719!4d-58.9898226" target="_blank" role="button" class="bnt btn-link">Ver mapa</a>
+                <a href="https://www.google.com/maps/place/Av.+San+Mart%C3%ADn+856,+H3504EJA+Resistencia,+Chaco/@-27.4615719,-58.9920113,17z/data=!3m1!4b1!4m5!3m4!1s0x94450c9333b63f87:0xc284443d177f5cb3!8m2!3d-27.4615719!4d-58.9898226" target="_blank" role="button" class="bnt btn-link text-dark">Ver mapa</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <br>
-      <!--Segunda fila-->
-      <div class="row align-items-center">
-        <div class="col-1">
-          <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+        <br>
+        <!--Segunda fila-->
+        <div class="row">
+          <div class="col-sm-1">
+            <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+          </div>
+          <div class="col-sm-1">
+            <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+          </div>
+          <div class="col-sm-1">
+            <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+          </div>
+          <div class="col-sm-1">
+            <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+          </div>
+          <div class="col-sm-1">
+            <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+          </div>
+          <div class="col-sm-1">
+            <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+          </div>
+          <div class="col-sm text-center">
+            <button class="cita btn btn-primary" type="button">Solicitar cita</button>
+          </div>
         </div>
-        <div class="col-1">
-          <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+        <br>
+        <!--Otras Propiedades-->
+        <div class="text-center">
+          <h1>Otras Propiedades</h1>
         </div>
-        <div class="col-1">
-          <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
-        </div>
-        <div class="col-1">
-          <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
-        </div>
-        <div class="col-1">
-          <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
-        </div>
-        <div class="col-1">
-          <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
-        </div>
-        <div class="col text-center">
-          <button class="btn btn-primary" type="button">Solicitar cita</button>
-        </div>
-      </div>
-      <br>
-      <!--Otras Propiedades-->
-      <div class="text-center text-white">
-        <h1>Otras Propiedades</h1>
-      </div>
-      <br> 
-      <div class="row text-white">
-        <div class="col">
-          <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-          <a href="#" role="button" class="btn-link text-white lead">Casa chiquita</a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Repellat tempora a, alias similique, tempore eveniet dolor libero cupiditate iusto temporibus soluta numquam tenetur. 
-            Omnis iste, repellat earum placeat velit libero!
-          </p>
-        </div>
-        <div class="col">
-          <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-          <a href="#" role="button" class="btn-link text-white lead">Alto chalet</a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Repellat tempora a, alias similique, tempore eveniet dolor libero cupiditate iusto temporibus soluta numquam tenetur. 
-            Omnis iste, repellat earum placeat velit libero!
-          </p>
-        </div>
-        <div class="col">
-          <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-          <a href="#" role="button" class="btn-link text-white lead">Quinta grande</a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Repellat tempora a, alias similique, tempore eveniet dolor libero cupiditate iusto temporibus soluta numquam tenetur. 
-            Omnis iste, repellat earum placeat velit libero!
-          </p>
-        </div>
-        <div class="col">
-          <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-          <a href="#" role="button" class="btn-link text-white lead">Una casa</a>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Repellat tempora a, alias similique, tempore eveniet dolor libero cupiditate iusto temporibus soluta numquam tenetur. 
-            Omnis iste, repellat earum placeat velit libero!
-          </p>
+        <br> 
+        <div class="row">
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+            <a href="#" role="button" class="btn-link text-dark lead">Casa chiquita</a>
+            <p>Tipo de contrato:</p>
+            <p>Dirección:</p>
+            <p>Tipo: </p>
+            <p>Precio:</p>
+          </div>
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+            <a href="#" role="button" class="btn-link text-dark lead">Alto chalet</a>
+            <p>Tipo de contrato:</p>
+            <p>Dirección:</p>
+            <p>Tipo: </p>
+            <p>Precio:</p>
+          </div>
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+            <a href="#" role="button" class="btn-link text-dark lead">Quinta grande</a>
+            <p>Tipo de contrato:</p>
+            <p>Dirección:</p>
+            <p>Tipo: </p>
+            <p>Precio:</p>
+          </div>
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+            <a href="#" role="button" class="btn-link text-dark lead">Una casa</a>
+            <p>Tipo de contrato:</p>
+            <p>Dirección:</p>
+            <p>Tipo: </p>
+            <p>Precio:</p>
+          </div>
         </div>
       </div>
     </div>
   </body>
   <!--Pie de Página-->
   <footer>
-    <div>
+    <div class="conteiner-fluid">
       <style>
-        .pie {background: rgb(56, 58, 211);}
-        button {background: rgb(56, 58, 211);}
+        .pie {background: rgb(216, 110, 10);}
         text {background: black;}
       </style>
       <div class="pie container-fluid">
@@ -166,6 +160,6 @@
           </div>
         </div>
       </div>
-    </div>    
+    </div>
   </footer>
 </html>

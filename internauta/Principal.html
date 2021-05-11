@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Principal</title>
+  </head>
+
+  <body>
+    <!-- Encabezado -->
+    <nav class="navbar navbar-dark" role= "encabezado">
+        <style>
+            nav {background: rgb(216, 110, 10);}
+            .btn-group {position:relative; top: 40px;}
+            .d-flex {position:relative; bottom: 40px;}
+        </style>
+        <!-- Navbar content -->
+        <div class="container-fluid">
+          <a class="navbar-brand">
+              <img src = "Logo.jpeg" shape = "rect" width = 80 height = 80>
+          </a>
+          <div class="btn-group" role="group" aria-label="Basic outlined example">
+              <a type="button" href="Principal.html" class="btn"><b>Principal</b></a>
+              <a type="button" href="Inmuebles.html" class="btn"><b>Inmuebles</b></a>
+          </div>
+          <form class="d-flex">
+            <a class="btn" href="Iniciar sesion.html"><b>Iniciar sesion</b></a>
+            <button class="btn" type="button"><b>Registrarse</b></button>
+          </form>
+        </div>
+      </nav>
+    <!-- Cuerpo --> 
+    <div class="container mt-5">
+        <!--131, 131, 131-->
+        <style> 
+            body {background: rgb(131, 131, 131);} 
+            .buscador {background-image: url(fondoBuscador.jpg); height: 500px;}
+            .buscar {position: relative; top: 50px;}
+            .precio {color: rgb(0, 0, 0);}
+        </style>
+        <div class="buscador"> <!--Buscador-->
+            <br>
+            <h1 class="text-center"><b>Buscar</b></h1>
+            <br>
+            <div class="row-sm">
+                <div class="col-sm text-center">
+                    <div class="tipo-contrato" role="group" aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-primary text-dark"><b>Alquiler</b></button>
+                        <button type="button" class="btn btn-primary text-dark"><b>Venta</b></button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="daFila row mt-5 align-items-center">
+                <div class="col-md-4"></div>
+                <div class="col-lg-2 text-center">
+                    <input type="text" placeholder="Localidad">
+                </div>
+                <div class="col-lg-2 text-center">
+                    <select name="tipo" id="#">
+                        <option value="0">Tipo</option>
+                        <option value="1">Departamento</option>
+                        <option value="2">Casa</option>
+                        <option value="3">Chalet</option>
+                        <option value="4">Local</option>
+                        <option value="5">Casa con local</option>
+                        <option value="6">Cabaña</option>
+                        <option value="7">Cochera</option>
+                    </select>
+                </div>
+                <div class="col-md-4"></div>
+            </div>            
+            <div class="precio row mt-5">
+                <div class="col-3"></div>
+                <div class="col-lg-2 text-center">
+                    <h5><b>Precio $</b></h5>
+                </div>
+                <div class="col-lg-2 text-center">
+                    <input type="number" placeholder="mínimo">
+                </div>
+                <div class="col-lg-2 text-center">
+                    <input type="number" placeholder="máximo">
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="buscar row" id="filtrar">
+                <div class="col-lg text-center">
+                    <a href="#scrollspyHeading1" class="btn btn-primary" type="button">Buscar</a>
+                </div>
+            </div>
+        </div>
+        <div data-bs-spy="scroll" data-bs-target="#filtrar" data-bs-offset="0" class="scrollspy-example mt-5" tabindex="0">
+            <h1 class="text-center" id="scrollspyHeading1">Inmuebles filtrados</h1>
+            <div class="row mt-5">
+                <div class="col-sm">
+                    <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+                    <a href="DatosPropiedad.html" role="button" class="btn-link text-dark lead">Una casa mediana</a>
+                    <p>Tipo de contrato:</p>
+                    <p>Dirección:</p>
+                    <p>Tipo: </p>
+                    <p>Precio:</p>
+                </div>
+                <div class="col-sm">
+                    <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+                    <a href="#" role="button" class="btn-link text-dark lead">Alto chalet</a>
+                    <p>Tipo de contrato:</p>
+                    <p>Dirección:</p>
+                    <p>Tipo: </p>
+                    <p>Precio:</p>
+                </div>
+                <div class="col-sm">
+                    <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+                    <a href="#" role="button" class="btn-link text-dark lead">Quinta grande</a>
+                    <p>Tipo de contrato:</p>
+                    <p>Dirección:</p>
+                    <p>Tipo: </p>
+                    <p>Precio:</p>
+                </div>
+                <div class="col-sm">
+                    <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+                    <a href="#" role="button" class="btn-link text-dark lead">Una casa</a>
+                    <p>Tipo de contrato:</p>
+                    <p>Dirección:</p>
+                    <p>Tipo: </p>
+                    <p>Precio:</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  </body>
+  <!--Pie de Página-->
+  <footer>
+    <div class="conteiner-fluid">
+      <style>
+        .pie {background: rgb(216, 110, 10);}
+        text {background: black;}
+      </style>
+      <div class="pie container-fluid">
+        <div class="row">
+          <div class="col text-start">
+            <img src = "Logo.jpeg" shape = "rect" width = 80 height = 80>
+            <a class="btn" type="button"><b>¿Quiénes somos?</b></a>
+          </div>
+          <div class="col text-end">
+            <h5>Contactanos:</h5>
+            <a class="btn" type="button"><b>362-598654</b></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
