@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Clientes</title>
+  </head>
+
+  <body>
+    <!-- Encabezado -->
+    <nav class="navbar navbar-dark" role= "encabezado">
+      <style>
+          nav {background: rgb(216, 110, 10);}
+          .btn-group {position:relative; top: 40px;}
+          .d-flex {position:relative; bottom: 40px;}
+      </style>
+      <!-- Navbar content -->
+      <div class="container-fluid">
+        <a class="navbar-brand">
+            <img src = "Logo.jpeg" shape = "rect" width = 80 height = 80>
+        </a>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <a type="button" href="Principal.html" class="btn text-white"><b>Principal</b></a>
+            <a type="button" href="Inmuebles.html" class="btn text-white"><b>Inmuebles</b></a>
+        </div>
+        <div class="col-1">
+          <div class="row-3">
+            <a class="navbar-brand" href="Tareas.html">
+              <img src="perfil.png" alt="..." width = 50 height = 50>
+            </a>
+          </div>
+          <h6 class="text-white">Usuario</h6>
+        </div>
+      </div>
+    </nav>
+    <!-- Cuerpo --> 
+    <div class="container mt-5">
+        <style>
+            body {background: rgb(131, 131, 131);}
+            hr {color: rgb(0, 0, 0);}
+        </style>
+        <div class="row mt-5">
+            <div class="col-md text-center">
+                <a href="#newCli" class="btn btn-primary">Nuevo cliente particular</a>
+            </div>
+            <div class="col-md text-center">
+                <a href="#newCliCor" class="btn btn-primary">Nuevo cliente corporativo</a>
+            </div>
+            <div class="col-md text-center">
+                <a href="#ActualizarD" class="btn btn-primary">Actualizar datos</a>
+            </div>
+        </div>
+        <hr size="15">
+        <div class="row justify-content-center mt-5"><!--Nuevo cliente particular-->
+            <h1 class="text-center" id="newCli">Nuevo cliente particular</h1>
+            <br>
+            <div class="col-8">
+                <div class="row mt-3"> <!--Ingreso de datos-->    
+                    <label for="NomYAp" class="col-md-3 text-center">Nombre y Apellido</label>
+                    <div class="col">
+                        <input type="text" placeholder="Nombre y Apellido" style="width: 600px;">
+                    </div> 
+                </div>
+                <div class="row mt-3">
+                    <label for="dni" class="col-md-3 text-center">DNI</label>
+                    <div class="col">
+                        <input type="number" placeholder="DNI" style="width: 600px;">
+                    </div>
+                </div>
+                <div class="row mt-3"> 
+                    <label for="cuil" class="col-md-3 text-center"> CUIL</label>
+                    <div class="col">
+                        <input type="number" placeholder="CUIL" style="width: 600px;">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <label for="fechaNac" class="col-md-3 text-center">Fecha de nacimiento</label>
+                    <div class="col">
+                        <input type="date" placeholder="DD/MM/AAAA" style="width: 600px;">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <label for="telefono" class="col-md-3 text-center">Telefono</label>
+                    <div class="col-4">
+                        <input type="number" placeholder="Telefono" style="width: 600px;">
+                    </div>
+                </div>
+                <div class="row mt-3"> 
+                    <label for="email" class="col-md-3 text-center">Email</label>
+                    <div class="col-4">
+                        <input type="email" placeholder="Email" style="width: 600px;">
+                    </div> 
+                </div>
+                <br>
+                <hr size="10">
+                <br>
+                <div class="row justify-content-center">
+                    <label class="input-group-text col-2" for="inputGroupFile">Subir Archivos</label>
+                    <div class="col">
+                        <input type="file" class="form-control" id="inputGroupFile">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="input-group-text col-2" for="inputGroupFile">Subir Archivos</label>
+                    <div class="col">
+                        <input type="file" class="form-control" id="inputGroupFile">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="input-group-text col-2" for="inputGroupFile">Subir Archivos</label>
+                    <div class="col">
+                        <input type="file" class="form-control" id="inputGroupFile">
+                    </div>
+                </div>
+                <div class="row mt-5 justify-content-center">
+                    <a href="Tareas.html" class="btn btn-success col-2" onclick="Alerta()">Guardar</a>
+                </div>
+            </div>
+        </div>
+        <hr size="15">
+        <div class="row justify-content-center mt-5"><!--Nuevo cliente corporativo-->
+            <h1 class="text-center" id="newCliCor">Nuevo cliente corporativo</h1>
+            <br>
+            <div class="col-8">
+                <div class="row mt-3"> <!--Ingreso de datos-->   
+                    <label for="Razón" class="col-md-3 text-center">Razón social</label>
+                    <div class="col">
+                        <input type="text" placeholder="Razón social" style="width: 600px;">
+                    </div> 
+                </div>
+                <div class="row mt-3">
+                    <label for="NomYAp" class="col-md-3 text-center">Nombre y Apellido</label>
+                    <div class="col">
+                        <input type="text" placeholder="Nombre y Apellido" style="width: 600px;">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <label for="cuit" class="col-md-3 text-center"> CUIT</label>
+                    <div class="col">
+                        <input type="number" placeholder="CUIT" style="width: 600px;">
+                    </div> 
+                </div>
+                <div class="row mt-3"> 
+                    <label for="telefono" class="col-md-3 text-center">Telefono</label>
+                    <div class="col">
+                        <input type="number" placeholder="Telefono" style="width: 600px;">
+                    </div> 
+                </div>
+                <div class="row mt-3">
+                    <label for="email" class="col-md-3 text-center">Email</label>
+                    <div class="col">
+                        <input type="email" placeholder="Email" style="width: 600px;">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <label for="Dirección" class="col-md-3 text-center">Dirección Oficina</label>
+                    <div class="col">
+                        <input type="text" placeholder="Dirección" style="width: 600px;">
+                    </div> 
+                </div>
+                <div class="row mt-3">
+                    <label for="Agente" class="col-md-3 text-center">Agente a cargo</label>
+                    <div class="col">
+                        <input type="text" placeholder="Nombre y Apellido del agente" style="width: 600px;">
+                    </div>
+                </div>
+                <hr size="10">
+                <div class="row justify-content-center">
+                    <label class="input-group-text col-2" for="inputGroupFile">Subir Archivos</label>
+                    <div class="col">
+                        <input type="file" class="form-control" id="inputGroupFile">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="input-group-text col-2" for="inputGroupFile">Subir Archivos</label>
+                    <div class="col">
+                        <input type="file" class="form-control" id="inputGroupFile">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="input-group-text col-2" for="inputGroupFile">Subir Archivos</label>
+                    <div class="col">
+                        <input type="file" class="form-control" id="inputGroupFile">
+                    </div>
+                </div>
+                <div class="row mt-5 justify-content-center">
+                    <a href="Tareas.html" class="btn btn-success col-2" onclick="Alerta()">Guardar</a>
+                </div>
+            </div>
+        </div>
+        <hr size="15">
+        <div class="row mt-5 justify-content-center"><!--Actualizar datos-->
+            <h1 class="text-center" id="ActualizarD">Actualizar datos</h1>
+            <br>
+            <div class="col-8">
+                <div class="row mt-3">
+                    <label for="Nombre" class="col-3 text-center">Nombre del cliente</label>
+                    <div class="col-lg-9">
+                      <input type="text" placeholder="Nombre" style="width: 600px;">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <label for="Apellido" class="col-3 text-center">Apellido del cliente</label>
+                    <div class="col-lg-9">
+                      <input type="text" placeholder="Apellido" style="width: 600px;">
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <label for="nroCliente" class="col-3 text-center">Numero del cliente</label>
+                    <div class="col-lg-9">
+                        <input type="number" placeholder="Numero de cliente" style="width: 600px;">
+                    </div>
+                </div>
+                <div class="row mt-3 justify-content-center">
+                    <a href="#resultBusqueda" class="btn btn-primary col-1">Buscar</a>
+                </div>
+                <hr size="10">
+                <div class="row mt-5">
+                    <h1 class="text-center" id="resultBusqueda">Datos encontrados</h1>
+                    <br>
+                    <div class="col">
+                      <h6>Apellido y Nombre</h6>
+                      <h6>DNI:</h6>
+                      <H6>CUIL:</H6>
+                    </div>
+                    <div class="col">
+                      <h6>Fecha de nacimiento:</h6>
+                      <h6>Teléfono:</h6>
+                      <H6>Email:</H6>
+                    </div>
+                    <div class="col">
+                      <h6>Documentos:</h6>
+                    </div>
+                </div>
+                <br>
+                <hr size="10">
+                <br>
+                <h5>Ingrese los datos que desea modificar</h5>
+                <div class="row justify-content-center mt-4">   
+                    <label for="NomYAp" class="col-md-3 text-center">Nombre y Apellido</label>
+                    <div class="col">
+                        <input type="text" placeholder="Nombre y Apellido" style="width: 600px;">
+                    </div> 
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <label for="dni" class="col-md-3 text-center">DNI</label>
+                    <div class="col">
+                        <input type="number" placeholder="DNI" style="width: 600px;">
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <label for="cuil" class="col-md-3 text-center"> CUIL</label>
+                    <div class="col">
+                        <input type="number" placeholder="CUIL" style="width: 600px;">
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4"> 
+                    <label for="fechaNac" class="col-md-3 text-center">Fecha de nacimiento</label>
+                    <div class="col">
+                        <input type="date" placeholder="DD/MM/AAAA" style="width: 600px;">
+                    </div>
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <label for="telefono" class="col-md-3 text-center">Telefono</label>
+                    <div class="col">
+                        <input type="number" placeholder="Telefono" style="width: 600px;">
+                    </div> 
+                </div>
+                <div class="row justify-content-center mt-4">
+                    <label for="email" class="col-md-3 text-center">Email</label>
+                    <div class="col">
+                        <input type="email" placeholder="Email" style="width: 600px;">
+                    </div>
+                </div>
+                <br>
+                <hr size="10">
+                <br>
+                <div class="row justify-content-center">
+                    <label class="input-group-text col-2" for="inputGroupFile">Subir Archivos</label>
+                    <div class="col">
+                        <input type="file" class="form-control" id="inputGroupFile">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="input-group-text col-2" for="inputGroupFile">Subir Archivos</label>
+                    <div class="col">
+                        <input type="file" class="form-control" id="inputGroupFile">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <label class="input-group-text col-2" for="inputGroupFile">Subir Archivos</label>
+                    <div class="col">
+                        <input type="file" class="form-control" id="inputGroupFile">
+                    </div>
+                </div>
+                <div class="row mt-5 justify-content-center">
+                    <a href="Tareas.html" class="btn btn-success col-2" onclick="Alerta()">Guardar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <script>
+        function Alerta() {alert('Datos guardados exitosamente')}
+    </script>
+</body>
+  <!--Pie de Página-->
+  <footer>
+    <div class="conteiner-fluid">
+      <style>
+        .pie {background: rgb(216, 110, 10); position: relative; top: 229px}
+        text {background: black;}
+      </style>
+      <div class="pie container-fluid">
+        <div class="row">
+          <div class="col text-start">
+            <img src = "Logo.jpeg" shape = "rect" width = 80 height = 80>
+            <a class="btn" type="button"><b>¿Quiénes somos?</b></a>
+          </div>
+          <div class="col text-end">
+            <h5>Contactanos:</h5>
+            <a class="btn" type="button"><b>362-598654</b></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
