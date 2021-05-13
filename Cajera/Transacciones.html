@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+    <title>Cierre de caja</title>
+    
+  </head>
+
+  <body>
+    <!-- Encabezado -->
+    <nav class="navbar navbar-dark" role= "encabezado">
+      <style>
+          nav {background: rgb(216, 110, 10);}
+          .btn-group {position:relative; top: 40px;}
+          .d-flex {position:relative; bottom: 40px;}
+      </style>
+      <!-- Navbar content -->
+      <div class="container-fluid">
+        <a class="navbar-brand">
+            <img src = "Logo.jpeg" shape = "rect" width = 80 height = 80>
+        </a>
+        <div class="btn-group" role="group" aria-label="Basic outlined example">
+            <a type="button" href="Principal.html" class="btn text-white"><b>Principal</b></a>
+            <a type="button" href="Inmuebles.html" class="btn text-white"><b>Inmuebles</b></a>
+        </div>
+        <div class="col-1">
+          <div class="row-3">
+            <a class="navbar-brand" href="Tareas.html">
+              <img src="perfil.png" alt="..." width = 50 height = 50>
+            </a>
+          </div>
+          <h6 class="text-white">Usuario</h6>
+        </div>
+      </div>
+    </nav>
+    <!-- Cuerpo --> 
+    <div class="container-fluid mt-5">
+        <style>
+            body {background: rgb(131, 131, 131);}
+        </style>
+        <div class="row mt-5">
+            <div class="col-sm text-center">
+                <label for="FechaMin" class="col-3">FechaMin</label>
+                <input type="date" placeholder="DD/MM/AAAA">
+              </div>
+              <div class="col-sm text-center">
+                  <label for="FechaMax" class="col-3">FechaMax</label>
+                  <input type="date" placeholder="DD/MM/AAAA">
+              </div>
+        </div>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Tipo</th>
+                        <th scope="col">Caja</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Hora</th>
+                        <th scope="col">Monto</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Entrada</td>
+                        <td>Alquiler</td>
+                        <td>26/05/2021</td>
+                        <td>10:22</td>
+                        <td>$10000</td>
+                        <td>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Entrada</td>
+                        <td>Alquiler</td>
+                        <td>28/05/2021</td>
+                        <td>17:38</td>
+                        <td>$10000</td>
+                        <td>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"></th>
+                        <td>Salida</td>
+                        <td>Venta</td>
+                        <td>30/05/2021</td>
+                        <td>8:27</td>
+                        <td>$17000</td>
+                        <td>
+                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="modal fade" id="Detalles" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Detalles del movimiento</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label for="Fecha" class="form-label-sm">Fecha:</label>
+                    </div>
+                    <div class="row">
+                        <label for="Hora" class="col-form-label-sm">Hora:</label>
+                    </div>
+                    <div class="row">
+                        <label for="mas">Faltan mas datos, base de datos</label>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+</body>
+  <!--Pie de Página-->
+  <footer>
+    <div class="conteiner-fluid">
+      <style>
+        .pie {background: rgb(216, 110, 10);}
+        text {background: black;}
+      </style>
+      <div class="pie container-fluid">
+        <div class="row">
+          <div class="col text-start">
+            <img src = "Logo.jpeg" shape = "rect" width = 80 height = 80>
+            <a class="btn" type="button"><b>¿Quiénes somos?</b></a>
+          </div>
+          <div class="col text-end">
+            <h5>Contactanos:</h5>
+            <a class="btn" type="button"><b>362-598654</b></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

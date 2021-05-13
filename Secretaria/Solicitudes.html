@@ -84,7 +84,7 @@
                     <td>elpepe@gmail.com</td>
                     <td>
                         <a href="AceptarSolicitud.html" class="btn btn-primary">Aceptar</a>
-                        <a href="Solicitudes.html" class="btn btn-primary" onclick="Aviso()">Cancelar</a>
+                        <a href="Solicitudes.html" class="btn btn-primary" onclick="return confirm('Esta seguro de cancelar la solicitud')">Cancelar</a>
                     </td>
                   </tr>
                   <!--Fila 2--> <!--
@@ -139,9 +139,6 @@
     </div>
     <br>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-    <script>
-        function Aviso() {alert('No se guardo la cita, se informó al cliente')}
-    </script>
 </body>
   <!--Pie de Página-->
   <footer>
