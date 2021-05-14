@@ -41,9 +41,9 @@
     <!-- Cuerpo --> 
     <div class="container mt-5">
       <style>
-          body {background: rgb(131, 131, 131);}
-          table {text-align-last: center;}
-          hr {color: rgb(0, 0, 0);}
+        body {background: rgb(131, 131, 131);}
+        table {text-align-last: center;}
+        hr {color: rgb(0, 0, 0);}
       </style>
       <div class="row">
         <!--Calendario-->
@@ -129,29 +129,27 @@
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body"> <!--Datos del cliente nuevo-->
-                <div class="row mt-3">
-                  <label for="Nombre" class="col-lg-2 col-form-label col-form-label-sm">Nombre del cliente</label>
-                  <div class="col-sm">
-                    <input class="form-control form-control-sm" type="text" placeholder="Nombre">
+                <form class="row g-3">
+                  <div class="row mt-3">
+                    <label for="validationServer01" class="form-label col-lg-2">Nombre del cliente</label>
+                    <input type="text" class="form-control form-control-sm col" id="validationServer01" placeholder="Nombre" required>
                   </div>
-                </div>
-                <div class="row mt-3">
-                  <label for="Telefono" class="col-lg-2 col-form-label col-form-label-sm">Telefono del cliente</label>
-                  <div class="col-sm">
-                    <input class="form-control form-control-sm" type="number" placeholder="Telefono">
+                  <div class="row mt-3">
+                    <label for="validationServer01" class="form-label col-lg-2">Teléfono del cliente</label>
+                    <input type="number" class="form-control form-control-sm col" id="validationServer01" placeholder="Teléfono" required>
                   </div>
-                </div>
-                <div class="row mt-3">
-                  <label for="Correo" class="col-lg-2 col-form-label col-form-label-sm">Correo del cliente</label>
-                  <div class="col-sm">
-                    <input class="form-control form-control-sm" type="email" placeholder="Email">
+                  <div class="row mt-3">
+                    <label for="validationServer01" class="form-label col-lg-2">Email del cliente</label>
+                    <input type="email" class="form-control form-control-sm col" id="validationServer01" placeholder="Email" required>
                   </div>
-                </div>
-                <div class="row mt-3">
-                  <div class="col text-center">
-                    <a href="#horarios" class="btn btn-primary">Guardar</a>
+                  <div class="row mt-3">
+                    <div class="col text-center">
+                      <a href="#horarios">
+                        <button class="btn btn-success" type="submit">Guardar</button>
+                      </a>
+                    </div>
                   </div>
-                </div>
+                </form>
               </div>
             </div>
           </div>
@@ -163,31 +161,40 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
               <div class="accordion-body"> <!--Datos cliente-->
-                <div class="row mt-3">
-                  <label for="Nombre"  class="col-lg-2 col-form-label col-form-label-sm">Nombre del cliente</label>
-                  <div class="col-sm">
-                    <input class="form-control form-control-sm" type="text" placeholder="Nombre">
+                <form class="row g-3">
+                  <div class="row mt-3">
+                    <label for="validationServer01" class="form-label col-lg-2">Nombre del cliente</label>
+                    <input type="text" class="form-control form-control-sm col" id="validationServer01" placeholder="Nombre" required>
                   </div>
-                </div>
-                <div class="row mt-3">
-                  <label for="Apellido"  class="col-lg-2 col-form-label col-form-label-sm">Apellido del cliente</label>
-                  <div class="col-sm">
-                    <input class="form-control form-control-sm" type="text" placeholder="Apellido">
+                  <div class="row mt-3">
+                    <label for="validationServer01" class="form-label col-lg-2">Apellido del cliente</label>
+                    <input type="text" class="form-control form-control-sm col" id="validationServer01" placeholder="Apellido" required>
                   </div>
-                </div>
-                <div class="row mt-3">
-                  <label for="nroCliente"  class="col-lg-2 col-form-label col-form-label-sm">Numero del cliente</label>
-                  <div class="col-sm">
-                    <input class="form-control form-control-sm" type="number" placeholder="Numero de cliente">
+                  <div class="row mt-3">
+                    <div class="col text-center">
+                      <a href="#resultBusqueda">
+                        <button class="btn btn-success" type="submit">Buscar</button>
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div class="row mt-3">
-                  <div class="col text-center">
-                    <a href="#resultBusqueda" class="btn btn-primary">Buscar</a>
+                </form>
+                <br>
+                <form class="row g-3">
+                  <div class="row mt-3">
+                    <label for="validationServer01" class="form-label col-lg-2">Número del cliente</label>
+                    <input type="number" class="form-control form-control-sm col" id="validationServer01" placeholder="Número" required>
                   </div>
-                </div>
-                <div class="row mt-5">
-                  <h1 class="text-center" id="resultBusqueda">Datos encontrados</h1>
+                  <div class="row mt-3">
+                    <div class="col text-center">
+                      <a href="#resultBusqueda">
+                        <button class="btn btn-success" type="submit">Buscar</button>
+                      </a>
+                    </div>
+                  </div>
+                </form>
+                <hr size="15">
+                <div class="row mt-5" id="resultBusqueda">
+                  <h1 class="text-center">Datos encontrados</h1>
                   <div class="col-sm">
                     <h6>Apellido y Nombre</h6>
                     <h6>DNI:</h6>
@@ -216,56 +223,55 @@
         <hr size="15">
         <h1 id="horarios" class="text-center">Horarios disponibles</h1>
         <div class="col text-center">
-          <label for="Fecha" class="col-sm-1">Fecha</label>
-          <input type="date" placeholder="DD/MM/AAAA">
+            <label for="Fecha" class="col-sm-1">Fecha</label>
+            <input type="date" placeholder="DD/MM/AAAA">
         </div>
-      </div>
-      <div class="row mt-5">
-        <!--Tabla-->
-        <div class="table-responsive">
-          <table class="table">
+    </div>
+    <div class="row mt-5">
+    <!--Tabla-->
+    <div class="table-responsive">
+        <table class="table">
             <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col">Hora</th>
-                <th scope="col">Agente disponible</th>
-                <th scope="col"></th>
-              </tr>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Hora</th>
+                    <th scope="col">Agente disponible</th>
+                    <th scope="col"></th>
+                </tr>
             </thead>
             <tbody>
-              <!--Fila 1-->
-              <tr>
-                <th scope="row"></th>
-                <td>10:00</td>
-                <td>Agente 1</td>
-                <td>
-                  <button type="submit" class="btn-success" onclick="Alerta()">Agregar cita</button>
-                </td>
-              </tr>
-              <!--Fila 2-->
-              <tr>
-                <th scope="row"></th>
-                <td>10:00</td>
-                <td>Agente 2</td>
-                <td>
-                  <button type="submit" class="btn-success" onclick="Alerta()">Agregar cita</button>
-                </td>
-              </tr>
-              <!--Fila 3-->
-              <tr>
-                <th scope="row"></th>
-                <td>10:30</td>
-                <td>Agente 3</td>
-                <td>
-                  <button type="submit" class="btn-success" onclick="Alerta()">Agregar cita</button>
-                </td>
-              </tr>
+                <!--Fila 1-->
+                <tr>
+                    <th scope="row"></th>
+                    <td>10:00</td>
+                    <td>Agente 1</td>
+                    <td>
+                        <a href="Solicitudes.html" type="submit" class="btn btn-success" onclick="Alerta()">Agregar cita</a>
+                    </td>
+                </tr>
+                <!--Fila 2-->
+                <tr>
+                    <th scope="row"></th>
+                    <td>10:00</td>
+                    <td>Agente 2</td>
+                    <td>
+                        <a href="Solicitudes.html" type="submit" class="btn btn-success" onclick="Alerta()">Agregar cita</a>
+                    </td>
+                </tr>
+                <!--Fila 3-->
+                <tr>
+                    <th scope="row"></th>
+                    <td>10:30</td>
+                    <td>Agente 3</td>
+                    <td>
+                        <a href="Solicitudes.html" type="submit" class="btn btn-success" onclick="Alerta()">Agregar cita</a>
+                    </td>
+                </tr>
             </tbody>
-          </table>
+        </table>
         </div>
       </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     <script>
       function Alerta(){

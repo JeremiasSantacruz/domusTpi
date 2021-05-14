@@ -46,6 +46,8 @@
             .buscador {background-image: url(fondoBuscador.jpg); height: 500px;}
             .buscar {position: relative; top: 50px;}
             .precio {color: rgb(0, 0, 0);}
+            .anterior {position: relative; left: 60px;}
+            .siguiente {position: relative; right: 60px;}
         </style>
         <div class="buscador"> <!--Buscador-->
             <br>
@@ -94,46 +96,117 @@
             </div>
             <div class="buscar row" id="filtrar">
                 <div class="col-lg text-center">
-                    <a href="#scrollspyHeading1" class="btn btn-primary" type="button">Buscar</a>
+                    <a href="#Filtro" class="btn btn-primary" type="button">Buscar</a>
                 </div>
             </div>
         </div>
-        <div data-bs-spy="scroll" data-bs-target="#filtrar" data-bs-offset="0" class="scrollspy-example mt-5" tabindex="0">
-            <h1 class="text-center" id="scrollspyHeading1">Inmuebles filtrados</h1>
-            <div class="row mt-5">
-                <div class="col-sm">
-                    <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-                    <a href="DatosPropiedad.html" role="button" class="btn-link text-dark lead">Una casa mediana</a>
-                    <p>Tipo de contrato:</p>
-                    <p>Dirección:</p>
-                    <p>Tipo: </p>
-                    <p>Precio:</p>
-                </div>
-                <div class="col-sm">
-                    <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-                    <a href="#" role="button" class="btn-link text-dark lead">Alto chalet</a>
-                    <p>Tipo de contrato:</p>
-                    <p>Dirección:</p>
-                    <p>Tipo: </p>
-                    <p>Precio:</p>
-                </div>
-                <div class="col-sm">
-                    <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-                    <a href="#" role="button" class="btn-link text-dark lead">Quinta grande</a>
-                    <p>Tipo de contrato:</p>
-                    <p>Dirección:</p>
-                    <p>Tipo: </p>
-                    <p>Precio:</p>
-                </div>
-                <div class="col-sm">
-                    <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-                    <a href="#" role="button" class="btn-link text-dark lead">Una casa</a>
-                    <p>Tipo de contrato:</p>
-                    <p>Dirección:</p>
-                    <p>Tipo: </p>
-                    <p>Precio:</p>
-                </div>
+        <br>
+        <h2 class="text-center" id="Filtro">Resultados filtrados</h2>
+        <div id="carouselExampleControls" class="carousel slide mt-5 justify-content-center" data-bs-ride="carousel">
+          <div class="row">
+            <div class="anterior col-1">
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
             </div>
+            <div class="col">
+              <div class="carousel-inner">
+                <div class="carousel-item active"> <!--Primer item-->
+                  <div class="d-block w-100">
+                    <div class="row">
+                      <div class="col-sm">
+                        <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+                        <a href="DatosPropiedad.html" role="button" class="btn-link text-dark lead">Una casa mediana</a>
+                        <p>Tipo de contrato:</p>
+                        <p>Dirección:</p>
+                        <p>Tipo: </p>
+                        <p>Precio:</p>
+                      </div>
+                      <div class="col-sm">
+                        <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+                        <a href="DatosPropiedad.html" role="button" class="btn-link text-dark lead">Alto chalet</a>
+                        <p>Tipo de contrato:</p>
+                        <p>Dirección:</p>
+                        <p>Tipo: </p>
+                        <p>Precio:</p>
+                      </div>
+                      <div class="col-sm">
+                          <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+                          <a href="#" role="button" class="btn-link text-dark lead">Quinta grande</a>
+                          <p>Tipo de contrato:</p>
+                          <p>Dirección:</p>
+                          <p>Tipo: </p>
+                          <p>Precio:</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item"> <!--Segundo item-->
+                  <div class="row">
+                    <div class="col-sm">
+                      <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+                      <a href="DatosPropiedad.html" role="button" class="btn-link text-dark lead">Una casa</a>
+                      <p>Tipo de contrato:</p>
+                      <p>Dirección:</p>
+                      <p>Tipo: </p>
+                      <p>Precio:</p>
+                    </div>
+                    <div class="col-sm">
+                      <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+                      <a href="#" role="button" class="btn-link text-dark lead">Un chalet</a>
+                      <p>Tipo de contrato:</p>
+                      <p>Dirección:</p>
+                      <p>Tipo: </p>
+                      <p>Precio:</p>
+                    </div>
+                    <div class="col-sm">
+                        <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+                        <a href="#" role="button" class="btn-link text-dark lead">Casa pequeña</a>
+                        <p>Tipo de contrato:</p>
+                        <p>Dirección:</p>
+                        <p>Tipo: </p>
+                        <p>Precio:</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item"> <!--Tercer item-->
+                  <div class="row">
+                    <div class="col-sm">
+                      <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+                      <a href="DatosPropiedad.html" role="button" class="btn-link text-dark lead">Una suite</a>
+                      <p>Tipo de contrato:</p>
+                      <p>Dirección:</p>
+                      <p>Tipo: </p>
+                      <p>Precio:</p>
+                    </div>
+                    <div class="col-sm">
+                      <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+                      <a href="#" role="button" class="btn-link text-dark lead">Casa acogedora</a>
+                      <p>Tipo de contrato:</p>
+                      <p>Dirección:</p>
+                      <p>Tipo: </p>
+                      <p>Precio:</p>
+                    </div>
+                    <div class="col-sm">
+                        <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+                        <a href="#" role="button" class="btn-link text-dark lead">Otro inmueble</a>
+                        <p>Tipo de contrato:</p>
+                        <p>Dirección:</p>
+                        <p>Tipo: </p>
+                        <p>Precio:</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="siguiente col-1">
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>

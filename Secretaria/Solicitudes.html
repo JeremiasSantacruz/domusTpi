@@ -84,19 +84,18 @@
                     <td>elpepe@gmail.com</td>
                     <td>
                         <a href="AceptarSolicitud.html" class="btn btn-primary">Aceptar</a>
-                        <a href="Solicitudes.html" class="btn btn-primary" onclick="return confirm('Esta seguro de cancelar la solicitud')">Cancelar</a>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Confirmar">Cancelar</a>
                     </td>
                   </tr>
                   <!--Fila 2--> <!--
                   <tr>
                     <th scope="row"></th>
-                    <td>0158</td>
                     <td>Pepe Argento</td>
                     <td>
                         <ul>
-                            <li>Lunes</li>
-                            <li>Martes</li>
-                            <li>Jueves</li>
+                            <li>31/05/2021</li>
+                            <li>01/06/2021</li>
+                            <li>06/06/2021</li>
                         </ul>
                     </td>
                     <td>
@@ -108,17 +107,21 @@
                     </td>
                     <td>Jose Hernandez 758</td>
                     <td>0362-123789</td>
+                    <td>elpepe@gmail.com</td>
+                    <td>
+                        <a href="AceptarSolicitud.html" class="btn btn-primary">Aceptar</a>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Confirmar">Cancelar</a>
+                    </td>
                   </tr> -->
                   <!--Fila 3--> <!--
                   <tr>
                     <th scope="row"></th>
-                    <td>0158</td>
                     <td>Pepe Argento</td>
                     <td>
                         <ul>
-                            <li>Lunes</li>
-                            <li>Martes</li>
-                            <li>Jueves</li>
+                            <li>31/05/2021</li>
+                            <li>01/06/2021</li>
+                            <li>06/06/2021</li>
                         </ul>
                     </td>
                     <td>
@@ -130,10 +133,28 @@
                     </td>
                     <td>Jose Hernandez 758</td>
                     <td>0362-123789</td>
+                    <td>elpepe@gmail.com</td>
+                    <td>
+                        <a href="AceptarSolicitud.html" class="btn btn-primary">Aceptar</a>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Confirmar">Cancelar</a>
+                    </td>
                   </tr>
                   -->
                 </tbody>
               </table>
+              <div class="modal fade" id="Confirmar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header text-center">
+                      <h5 class="modal-title text-center" id="exampleModalLabel">Desea eliminar solicitud</h5>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Si</button>
+                      <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
       </div>
     </div>
