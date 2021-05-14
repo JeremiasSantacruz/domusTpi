@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap/css/bootstrap.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <title>Eliminar Usuario</title>
+    </head>
+    <style>
+        .container{
+          position:relative;
+          top:150px;
+        }
+        .inicioUs{
+          position: relative;
+          left: 10px;
+        }
+        .inicioUs input{
+          height: 25px;
+          width: 150px;
+        }
+        .inicioUs label{
+          position: relative;
+          left: 25px;
+          bottom: 5px;
+        }
+        footer .redes{
+          position: relative;
+          top:350px;
+          background:rgb(186, 74, 0) ;
+          height: 100px;
+        }
+        footer label{
+          color:black;
+        }
+        body{
+          background: rgb(254, 254, 254);
+        }
+        header a{
+          color:black;
+          font-size:22px;
+        }
+        header button{
+          position: relative;
+          left: 235px;
+          bottom: 5px;
+        } 
+        .encabezado {
+          color: cornsilk;
+        }
+    </style>
+<body>
+    <header> <!--Encabezado-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#dropdown" id="navbarDropdown" role="button" data-bs-target="dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul id="dropdown" class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid mt-5"> <!--Cuerpo-->
+        <div class="table-responsive"> <!--Lista de usuarios-->
+            <table class="table">
+                <thead class="bg-primary">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Usuario</th>
+                    <th scope="col">Puesto</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">DNI</th>
+                    <th scope="col">Teléfono</th>
+                    <th scope="col">Email</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr> <!--Secretaria-->
+                        <th scope="row"></th>
+                        <td>Usuario 1</td>
+                        <td>Secretario</td>
+                        <td>Pepito</td>
+                        <td>35879654</td>
+                        <td>0362-123456</td>
+                        <td>secretario@domus.com</td>
+                        <td>
+                            <button class="btn btn-danger" type="submit" onclick="Confirmar()">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr> <!--Agente 1-->
+                        <th scope="row"></th>
+                        <td>Usuario 2</td>
+                        <td>Agente 1</td>
+                        <td>Jorgito</td>
+                        <td>37879854</td>
+                        <td>0362-138456</td>
+                        <td>agente1@domus.com</td>
+                        <td>
+                            <button class="btn btn-danger" type="submit" onclick="Confirmar()">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr> <!--Agente 2-->
+                        <th scope="row"></th>
+                        <td>Usuario 3</td>
+                        <td>Agente 2</td>
+                        <td>Catalina</td>
+                        <td>30879654</td>
+                        <td>0362-8956456</td>
+                        <td>agente2@domus.com</td>
+                        <td>
+                            <button class="btn btn-danger" type="submit" onclick="Confirmar()">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr> <!--Agente 3-->
+                        <th scope="row"></th>
+                        <td>Usuario 4</td>
+                        <td>Agente 3</td>
+                        <td>Ale</td>
+                        <td>39879888</td>
+                        <td>0362-321456</td>
+                        <td>agente3@domus.com</td>
+                        <td>
+                            <button class="btn btn-danger" type="submit" onclick="Confirmar()">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr> <!--Emleado Marketing-->
+                        <th scope="row"></th>
+                        <td>Usuario 5</td>
+                        <td>Empleado marketing</td>
+                        <td>Pablo</td>
+                        <td>39658814</td>
+                        <td>0362-138654</td>
+                        <td>emarketing@domus.com</td>
+                        <td>
+                            <button class="btn btn-danger" type="submit" onclick="Confirmar()">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr> <!--Cajera-->
+                        <th scope="row"></th>
+                        <td>Usuario 6</td>
+                        <td>Cajero</td>
+                        <td>Victoria</td>
+                        <td>4089624</td>
+                        <td>0362-896951</td>
+                        <td>cajero@domus.com</td>
+                        <td>
+                            <button class="btn btn-danger" type="submit" onclick="Confirmar()">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr> <!--Jefe Admin-->
+                        <th scope="row"></th>
+                        <td>Usuario 7</td>
+                        <td>Jefe administración</td>
+                        <td>Estefania</td>
+                        <td>29258741</td>
+                        <td>0362-753951</td>
+                        <td>jadministracion@domus.com</td>
+                        <td>
+                            <button class="btn btn-danger" type="submit" onclick="Confirmar()">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr> <!--Jefe Comercializacion-->
+                        <th scope="row"></th>
+                        <td>Usuario 8</td>
+                        <td>Jefe comercialización</td>
+                        <td>Maria</td>
+                        <td>27963147</td>
+                        <td>0362-145698</td>
+                        <td>jcomercializacion@domus.com</td>
+                        <td>
+                            <button class="btn btn-danger" type="submit" onclick="Confirmar()">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr> <!--Administrador del sitio-->
+                        <th scope="row"></th>
+                        <td>Usuario 9</td>
+                        <td>Administrador del sitio</td>
+                        <td>Hugo</td>
+                        <td>40269842</td>
+                        <td>0362-114224</td>
+                        <td>adminsitioweb@domus.com</td>
+                        <td>
+                            <button class="btn btn-danger" type="submit" onclick="Confirmar()">Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr> <!--Gerente general-->
+                        <th scope="row"></th>
+                        <td>Usuario 10</td>
+                        <td>Gerente general</td>
+                        <td>Juan Pablo</td>
+                        <td>25985246</td>
+                        <td>0362-744598</td>
+                        <td>gerente@domus.com</td>
+                        <td>
+                            <button class="btn btn-danger" type="submit" onclick="Confirmar()">Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
+</body>
+<script>
+    function Confirmar(){alert('Desea eliminar al usuario')}
+</script>
+<footer> <!--Pie-->
+
+</footer>
+</html>
