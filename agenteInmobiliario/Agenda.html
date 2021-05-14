@@ -17,19 +17,6 @@
        
         }
     
-    .inicioUs{
-       position: relative;
-       left: 10px;
-    }
-    .inicioUs input{
-      height: 25px;
-      width: 150px;
-    }
-    .inicioUs label{
-      position: relative;
-      left: 25px;
-      bottom: 5px;
-    }
     
     
     footer .redes{
@@ -47,57 +34,34 @@
     body{
       background:rgb(1253, 254, 254);
     }
-    header a{
-      color:black;
-      font-size:22px;
-  
-    }
-    header button{
-      position: relative;
-      left: 235px;
-      bottom: 5px;
-      
-    }
+    
+    
     
 </style>
 
-  <body>
+ <body>
     <header>
-      <!--navbar-dark bg-dark color -->
-       
-      <ul class="nav justify-content-center fixed-top" style="background-color:rgb(186, 74, 0)">
-        <li>
-          <div class="logo">
-            <img src="https:/via.placeholder.com/70x70" class="img-thumbnail mt-1 offset-3 rounded-circle" alt="...">
-          </div> 
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Active</a>
         </li>
-       <li class="nav-item mt-4 offset-2">
-         <a class="nav-link active font-weight-bold" href="#">PRINCIPAL</a>
-       </li>
-       <li class="nav-item mt-4">
-         <a class="nav-link font-weight-bold" href="#">INMUEBLES</a>
-       </li>
-       <li class="nav-item mt-4">
-        <a class="nav-link font-weight-bold" href="#">QUIENES SOMOS</a>
-      </li>
-       <li>
-        <form class="inicioUs">
-          <div class="row mt-1">
-            <div class="col">
-              <label class="nav-link font-weight-bold" for="Usuario Registrado">Iniciar sesión</label>
-            </div>
-            <div class="col">
-              <input type="text" class="form-control border border-dark" placeholder="Usuario">
-            </div>
-            <div class="col">
-              <input type="text" class="form-control border border-dark" placeholder="Contraseña">
-            </div>
-          </div>
-          <div class="row  offset-1">
-            <button type="button" class="btn btn-light font-weight-bold border border-dark">Registrarse</button>
-          </div>
-        </form>
-       </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
    </header>
     <!-- Cuerpo --> 
     <div class="container mt-5">
@@ -162,6 +126,7 @@
         </table>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
     <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
     <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
   </body>
