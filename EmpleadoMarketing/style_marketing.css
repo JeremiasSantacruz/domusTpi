@@ -1,0 +1,22 @@
+.container{
+      position:relative;
+      top:150px;
+  }
+
+nav{
+  background:rgb(186, 74, 0);
+}
+
+footer .redes{
+  position: relative;
+  top:350px;
+  background:rgb(186, 74, 0) ;
+  height: 100px;
+  }
+footer label{
+  color:black;
+}
+
+body{
+  background:rgb(254, 254, 254);
+}
