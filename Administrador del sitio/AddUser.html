@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="../assets/css/bootstrap/css/bootstrap.min.css">
+        <title>Añadir usuario</title>
+    </head>
+    <style>
+        .container{
+          position:relative;
+          top:150px;
+        }
+        .inicioUs{
+          position: relative;
+          left: 10px;
+        }
+        .inicioUs input{
+          height: 25px;
+          width: 150px;
+        }
+        .inicioUs label{
+          position: relative;
+          left: 25px;
+          bottom: 5px;
+        }
+        footer .redes{
+          position: relative;
+          top:350px;
+          background:rgb(186, 74, 0) ;
+          height: 100px;
+        }
+        footer label{
+          color:black;
+        }
+        body{
+          background: rgb(131, 131, 131);
+        }
+        header a{
+          color:black;
+          font-size:22px;
+        }
+        header button{
+          position: relative;
+          left: 235px;
+          bottom: 5px;
+        } 
+        .encabezado {
+          color: cornsilk;
+        }
+        form {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-right: 100px;
+            margin-left: 100px;
+            padding: 50px;
+            background: white;
+            border-radius: 50px;
+
+        }
+        form h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+<body>
+    <header> <!--Encabezado-->
+
+    </header>
+    <div class="container-fluid"> <!--Cuerpo-->
+        <form class="needs-validation" novalidate>
+            <h1 class="text-center">Añadir un nuevo usuario</h1>
+            <hr>
+            <div class="row align-items-center mt-4">
+                <label for="NombreYApellido" class="col-lg-2">Nombre y Apellido:</label>
+                <input type="text" class="form-control col" id="validationCustom01" required>
+                <div class="invalid-feedback">Ingrese un nombre y apellido</div>
+            </div>
+            <div class="row align-items-center mt-4">
+                <label for="dni" class="col-lg-2">DNI:</label>
+                <input type="number" class="form-control col" id="validationCustom01" required>
+                <div class="invalid-feedback">Ingrese un número de documento</div>
+            </div>
+            <div class="row align-items-center mt-4">
+                <label for="NombreYApellido" class="col-lg-2">Puesto:</label>
+                <select class="form-select col" aria-label="Default select example" required>
+                    <option selected value="">Seleccione un puesto</option>
+                    <option value="1">Secretario</option>
+                    <option value="2">Agente inmobiliario</option>
+                    <option value="3">Empleado de marketing</option>
+                    <option value="4">Cajero</option>
+                    <option value="5">Jefe sector de administración</option>
+                    <option value="6">Jefe sector de comercialización</option>
+                    <option value="7">Administrador del sitio web</option>
+                    <option value="8">Gerente general</option>
+                </select>
+                <div class="invalid-feedback">Selecciones un puesto</div>
+            </div>
+            <div class="row align-items-center mt-4">
+                <label for="teléfono" class="col-lg-2">Teléfono:</label>
+                <input type="number" class="form-control col" id="validationCustom01" required>
+                <div class="invalid-feedback">Ingrese un número de teléfono</div>
+            </div>
+            <div class="row align-items-center mt-4">
+                <label for="teléfono" class="col-lg-2">Teléfono alternativo:</label>
+                <input type="number" class="form-control col" id="validationCustom01">
+                <div class="invalid-feedback">Ingrese un número de teléfono</div>
+            </div>
+            <div class="row align-items-center mt-4">
+                <label for="email" class="col-lg-2">Email:</label>
+                <input type="email" class="form-control col" id="validationCustom01" required>
+                <div class="invalid-feedback">Ingrese un correo</div>
+            </div>
+            <div class="row align-items-center mt-4">
+                <label for="usuario" class="col-lg-2">Nombre de usuario:</label>
+                <input type="text" class="form-control col" id="validationCustom01" required>
+                <div class="invalid-feedback">Ingrese un nombre de usuario válido</div>
+            </div>
+            <div class="row align-items-center mt-4">
+                <label for="contraseña" class="col-lg-2">Contraseña:</label>
+                <input type="password" class="form-control col" id="validationCustom01" required>
+                <div class="invalid-feedback">Ingrese una contraseña</div>
+            </div>
+            <div class="row mt-5 justify-content-center">
+                <button class="btn btn-success" onclick="Confirmar()">Confirmar</button>
+            </div>
+        </form>
+    </div>
+    <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
+    
+</body>
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+    'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+        }, false)
+        })
+    })()
+    function Confirmar(){alert('Usuario cargado exitosamente')}
+</script>
+<footer> <!--Pie-->
+
+</footer>
+</html>
