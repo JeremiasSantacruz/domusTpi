@@ -40,24 +40,21 @@
             </div>
              <div class="usuario">
   
-              <form class="needs-validation" novalidate>
+              <form class="g-3 needs-validation" action="../ClienteRegistrado/Principal.html" novalidate>
                 <div class="form-row mt-1">
                   <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" id="inputUsurs" placeholder="Usuario">
-                    <div class="valid-feedback">
-                      Looks good!
-                    </div>
+                    <input type="text" class="form-control" id="inputUsurs" placeholder="Usuario" required>
                  </div>
                  <div class="form-group col-lg-6">
-                    <input type="password" class="form-control" id="inputContraseña" placeholder="Contraseña">
+                    <input type="password" class="form-control" id="inputContraseña" placeholder="Contraseña" required>
                  </div>
                </div>
                <div class="form-row">
                  <div class="form-group col-lg-5 offset-1">      
-                    <button type="submit" class="btn btn-secondary text-dark" >Iniciar Sesión</button>
+                    <button type="submit" class="btn btn-secondary text-dark">Iniciar Sesión</button>
                  </div>
                  <div class="form-group col-lg-6"> 
-                   <button type="button" class="btn btn-link text-dark">Registrarse</button>
+                   <a type="button" class="btn btn-link text-dark" href="Registrarse.html">Registrarse</a>
                  </div> 
                 </div>
                  
@@ -326,10 +323,10 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
-     <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
-     <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
-     <!--Validación usuario-->
-     <script>
+  <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
+  <!--Validación usuario-->
+  <script>
       // Example starter JavaScript for disabling form submissions if there are invalid fields
       (function() {
         'use strict';
