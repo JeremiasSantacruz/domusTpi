@@ -26,6 +26,7 @@ ul{
 .container{
   position:relative;
   top:150px;  
+   
 }
 #carouselExampleControls{
   background:rgb(112, 123, 124 );
@@ -33,3 +34,7 @@ ul{
   margin: 10px;
   border-radius: 5px;
 }
+
+table {text-align-last: center;}
+
+#accordionExample{background: rgb(112, 123, 124 );}
