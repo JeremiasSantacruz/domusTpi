@@ -9,8 +9,6 @@
     <!--ESTILOS CSS-->
     <link rel="stylesheet" type="text/css" href="../assets/css/headerYfooter/estilos.css" > 
     </head>
-    
-
     <header>
       <nav class="navbar navbar justify-content-center fixed-top navbar-expand-lg navbar-light">
           <div class="logo">
@@ -31,8 +29,11 @@
                     TAREAS
                   </a>
                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item font-weight-bold" href="Agenda.html">Agenda</a></li>
-                    <li><a class="dropdown-item font-weight-bold" href="carga.html">Nueva propiedad</a></li>
+                    <li><a class="dropdown-item font-weight-bold" href="Alquileres.html">Caja de alquileres</a></li>
+                    <li><a class="dropdown-item font-weight-bold" href="Ventas.html">Caja de ventas</a></li>
+                    <li><a class="dropdown-item font-weight-bold" data-bs-toggle="modal" data-bs-target="#EntradasSalidas">Entradas/salidas</a></li>
+                    <li><a class="dropdown-item font-weight-bold" href="Cierre.html">Cierre de caja</a></li>
+                    <li><a class="dropdown-item font-weight-bold" href="Transacciones.html">Movimientos</a></li>
                   </ul>
                 </li>
               </ul>
@@ -61,7 +62,56 @@
           </div>
       </nav>
    </header>
-
+   <!-- Modal -->
+  <div class="modal fade" id="EntradasSalidas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Una entrada</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="row justify-content-center mt-3">
+                <label for="Fecha" class="col-sm-2 col-form-label col-form-label-sm">Fecha</label>
+                <div class="col-sm">
+                    <input type="date" class="form-control form-control-sm" id="colFormLabelSm" placeholder="DD/MM/AAAA">
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <label for="Hora" class="col-sm-2 col-form-label col-form-label-sm">Hora</label>
+                <div class="col-sm">
+                    <input type="time" class="form-control form-control-sm" id="colFormLabelSm" placeholder="00:00">
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <label for="concepto" class="col-sm-2 col-form-label col-form-label-sm">Concepto</label>
+                <div class="col-sm">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm" required>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <label for="monto" class="col-sm-2 col-form-label col-form-label-sm">Monto</label>
+                <div class="col-sm">
+                    <input type="number" class="form-control form-control-sm" id="colFormLabelSm" required>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <select class="form-select form-select-sm" id="validationDefault03" required>
+                    <option selected disabled value="">Tipo</option>
+                    <option value="1">Entrada</option>
+                    <option value="2">Salida</option>
+                </select>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
     <body>
          <div class="container">
           <div class="row offset-2 col-md-8 mt-5 "> <!--fila 1-->

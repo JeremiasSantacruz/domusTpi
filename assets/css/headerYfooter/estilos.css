@@ -1,21 +1,49 @@
  nav{
   background:rgb(186, 74, 0);
+  height: 100px;
   }
 footer .redes{
   position: relative;
   top:350px;
   background:rgb(186, 74, 0) ;
   height: 100px;
+  width: auto;
 
 }
 
 footer label{
   color:black;
 }
+
+footer .contactos{
+  position: relative;
+  top:300px;
+}
+
 section {
     position: relative;
     top: 100px;
 }
-div .resultados{
-  background: black;
+ul{
+  list-style-type: none;
 }
+.usuario{
+  position: relative;
+  right: 80px;
+}
+.container{
+  position:relative;
+  top:150px;  
+   
+}
+#carouselExampleControls{
+  background:rgb(112, 123, 124 );
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+table {text-align-last: center;}
+
+#accordionExample{background: rgb(112, 123, 124 );}
+

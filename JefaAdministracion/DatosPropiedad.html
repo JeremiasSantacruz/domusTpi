@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
   <head>
 
     <!-- Required meta tags -->
@@ -11,10 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!--ESTILOS CSS-->
     <link rel="stylesheet" type="text/css" href="../assets/css/headerYfooter/estilos.css" >
-    <title>Aceptar Solicitud</title>
+    <title>Propiedad</title>
 
   </head>
-  
 
   <body>
     <header>
@@ -68,112 +66,119 @@
    </nav>
   </header>
     <!-- Cuerpo --> 
-    <div class="container">
-        <style>
-            body {background: rgb(131, 131, 131);}
-            .tareas {position: relative; top: 100px;}
-        </style>
-
-        <!--<div class="row">-->
-            
-        <!--Tabla-->
-        <div class="table-responsive">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Cliente</th>
-                        <th scope="col">Fecha</th>
-                        <th scope="col">Hora</th>
-                        <th scope="col">Lugar</th>
-                        <th scope="col">Telefono</th>
-                        <th scope="col">Email</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row"></th>
-                        <td>Pepe Argento</td>
-                        <td>
-                            <ul>
-                                <li>31/05/2021</li>
-                                <li>01/06/2021</li>
-                                <li>0./06/2021</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>8:00 - 10:30</li>
-                                <li>15:00 - 19:00</li>
-                                <li>8:00 - 11:30</li>
-                            </ul>
-                        </td>
-                        <td>Jose Hernandez 758</td>
-                        <td>0362-123789</td>
-                        <td>elpepe@gmai.com</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+    <div class="container-fluid">
+      <div class="container">
+        <!--Primera fila-->
         <div class="row mt-5">
-            <hr size="15">
-            <h1 id="horarios" class="text-center">Horarios disponibles</h1>
-            <div class="col text-center">
-                <label for="Fecha" class="col-sm-1">Fecha</label>
-                <input type="date" placeholder="DD/MM/AAAA">
+          <div class="col-lg-6">
+            <img src="https:/via.placeholder.com/500x300/" class="card-img" alt="...">
+          </div>
+          <div class="col-lg-6">
+            <h2><b>Una casa mediana</b></h2>
+            <br>
+            <div class="col-sm">
+              <h4>Codigo Inmueble: 1251</h4>
+              <h4>Tipo de Inmueble: Casa</h4>
+              <h4>Opciones de contrato: Venta</h4>
+              <h4>Cantidad de ambientes: 5</h4>
+              <br>
+              <div class="row text-start">
+                <div class="col-md-4">
+                  <h4>Dormitorios: 2</h4>
+                </div>
+                <div class="col-md-3">
+                  <h4>Baños: 1</h4>
+                </div>
+                <div class="col-md-5">
+                  <h4>Precio: $2.000.000</h4>
+                </div>
+              </div>
+              <br>
+              <h4>Direccion: Av. San Maritn 856, Resistencia, Chaco</h4>
+              <div class="row">
+                <div class="col text-center">
+                  <a href="https://www.google.com/maps/place/Av.+San+Mart%C3%ADn+856,+H3504EJA+Resistencia,+Chaco/@-27.4615719,-58.9920113,17z/data=!3m1!4b1!4m5!3m4!1s0x94450c9333b63f87:0xc284443d177f5cb3!8m2!3d-27.4615719!4d-58.9898226" target="_blank" role="button" class="bnt btn-link text-dark">Ver mapa</a>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="row mt-5">
-        <!--Tabla-->
-        <div class="table-responsive">
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col"></th>
-                        <th scope="col">Hora</th>
-                        <th scope="col">Agente disponible</th>
-                        <th scope="col"></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!--Fila 1-->
-                    <tr>
-                        <th scope="row"></th>
-                        <td>10:00</td>
-                        <td>Agente 1</td>
-                        <td>
-                            <a href="Solicitudes.html" type="submit" class="btn btn-success" onclick="Alerta()">Agregar cita</a>
-                        </td>
-                    </tr>
-                    <!--Fila 2-->
-                    <tr>
-                        <th scope="row"></th>
-                        <td>10:00</td>
-                        <td>Agente 2</td>
-                        <td>
-                            <a href="Solicitudes.html" type="submit" class="btn btn-success" onclick="Alerta()">Agregar cita</a>
-                        </td>
-                    </tr>
-                    <!--Fila 3-->
-                    <tr>
-                        <th scope="row"></th>
-                        <td>10:30</td>
-                        <td>Agente 3</td>
-                        <td>
-                            <a href="Solicitudes.html" type="submit" class="btn btn-success" onclick="Alerta()">Agregar cita</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <br>
+        <!--Segunda fila-->
+        <div class="conteiner">
+          <div class="row">
+            <div class="col-md-1">
+              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+            </div>
+            <div class="col-md-1">
+              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+            </div>
+            <div class="col-md-1">
+              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+            </div>
+            <div class="col-md-1">
+              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+            </div>
+            <div class="col-md-1">
+              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+            </div>
+            <div class="col-md-1">
+              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+            </div>
+            <div class="col-sm-3">
+              <h5>Propietario: Pepe Argento</h5>
+              <h5>Nro. Propietario: 0180</h5>
+              <h5>Tipo: Particular</h5>
+            </div>
+            <div class="col-sm-3">
+              <h5>DNI Propietario: 35.489.612</h5>
+              <h5>teléfono: 0362-123456</h5>
+              <h5>Email: elpropietario@gmail.com</h5>
+            </div>
+          </div>
         </div>
+        <br>
+        <!--Otras Propiedades-->
+        <div class="text-center">
+          <h1>Otras Propiedades</h1>
+        </div>
+        <br> 
         <div class="row">
-            <div class="col text-center">
-                <a href="Solicitudes.html" class="btn btn-danger" onclick="return confirm('Esta seguro de cancelar la solicitud')">Cancelar</a>
-            </div>
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+            <a href="#" role="button" class="btn-link text-dark lead">Casa chiquita</a>
+            <p>Tipo de contrato:</p>
+            <p>Dirección:</p>
+            <p>Tipo: </p>
+            <p>Precio:</p>
+          </div>
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+            <a href="#" role="button" class="btn-link text-dark lead">Alto chalet</a>
+            <p>Tipo de contrato:</p>
+            <p>Dirección:</p>
+            <p>Tipo: </p>
+            <p>Precio:</p>
+          </div>
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+            <a href="#" role="button" class="btn-link text-dark lead">Quinta grande</a>
+            <p>Tipo de contrato:</p>
+            <p>Dirección:</p>
+            <p>Tipo: </p>
+            <p>Precio:</p>
+          </div>
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+            <a href="#" role="button" class="btn-link text-dark lead">Una casa</a>
+            <p>Tipo de contrato:</p>
+            <p>Dirección:</p>
+            <p>Tipo: </p>
+            <p>Precio:</p>
+          </div>
         </div>
+      </div>
     </div>
-   
-
     <footer>
       <section class="redes">
         <h5 class="text-center font-weight-bold">Seguinos</h5>
@@ -191,12 +196,12 @@
             </li>
           </ul>
         </div>
-      </section> 
+      </section>   
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
     <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
     <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
-</body>
+
+  </body>
   
 </html>

@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
   <head>
 
     <!-- Required meta tags -->
@@ -9,75 +8,73 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <!--ESTILOS CSS-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/headerYfooter/estilosCli.css" >
     <title>Propiedad</title>
-
+    <!--ESTILOS CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/headerYfooter/estilos.css" >
+    
   </head>
 
   <body>
-
     <!-- Encabezado -->
     <header>
       <nav class="navbar navbar justify-content-center fixed-top navbar-expand-lg navbar-light">
           <div class="logo">
-              <img src="../Imagenes/Logo.png" class="img-thumbnail mt-1 offset-4 rounded-circle" alt="..." height="70" width="70">
-           </div> 
+            <img src="../Imagenes/Logo.png" class="img-thumbnail mt-1 offset-4 rounded-circle" alt="..." height="70" width="70">
+          </div> 
           <div class="container-fluid">
-              <a class="navbar-brand offset-4 font-weight-bold" href="Principal.html">PRINCIPAL</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                          <a class="navbar-brand offset-2 font-weight-bold" href="Inmuebles.html">INMUEBLES</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="navbar-brand offset-2 font-weight-bold" href="#">QUIENES SOMOS</a>
-                      </li>
-                   </ul>
-              </div>
+            <a class="navbar-brand offset-4 font-weight-bold" href="Principal.html">PRINCIPAL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="navbar-brand offset-2 font-weight-bold" href="Inmuebles.html">INMUEBLES</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="navbar-brand offset-2 font-weight-bold" href="#">QUIENES SOMOS</a>
+                </li>
+              </ul>
+            </div>
           </div>
-           <div class="usuario">
-
-            <form class="needs-validation g-3" action="../ClienteRegistrado/DatosPropiedad.html" novalidate>
-
-              <div class="form-row mt-1">
-                <div class="form-group col-lg-6">
-                  <input type="text" class="form-control" style="height:25px;" id="inputUsurs" placeholder="Usuario" required>
-                  
+          <div class="usuario">
+            <ul>
+              <li>
+               <div class="row-3 offset-3">
+                 <img src="../Imagenes/perfil.png" alt="..." width = 30 height = 30>
                </div>
-               <div class="form-group col-lg-6">
-                  <input type="password" class="form-control" style="height:25px;"   id="inputContraseña" placeholder="Contraseña" required>
+              </li>
+              <li>
+               <div class="dropdown">
+                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:16px;">
+                   Usuario
+                 </button>
+                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                   <li><a class="dropdown-item" href="#">Configuración</a></li>
+                   <li><a class="dropdown-item" href="../internauta/DatosPropiedad.html">Salir</a></li>
+                 </ul>
                </div>
-             </div>
-             <div class="form-row">
-               <div class="form-group col-lg-5 offset-1">      
-                  <button type="submit" class="btn btn-sm btn-secondary text-dark" >Iniciar Sesión</button>
-               </div>
-               <div class="form-group col-lg-6"> 
-                 <button type="button" class="btn btn-sm btn-link text-dark">Registrarse</button>
-               </div> 
-              </div>
-               
-            </form>
-         </div>
-   </nav>
-  </header>
+               </li>
+            </ul>
+  
+          </div>
+      </nav>
+   </header>
     <!-- Cuerpo --> 
    
     
       <style>
         .cita {position: relative; top: 25px;}
       </style>
-
-      <!--Primera fila-->
+      
       <div class="container">
+
+        <!--Primera fila-->
         <div class="row mt-3">
           <div class="col-lg-6">
             <img src="../Imagenes/fondo.jpg" class="card-img" alt="..." height="350" width="600">
           </div>
+
           <div class="col-sm-6">
             <h2><b>Una casa mediana</b></h2>.
             <br>
@@ -127,7 +124,7 @@
             <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
           </div>
           <div class="col-sm text-center">
-            <button class="cita btn" style="background:rgb(186, 74, 0);" type="button">Solicitar cita</button>
+            <a class="cita btn" style="background:rgb(186, 74, 0);" href="SolicitarCita.html">Solicitar cita</a>
           </div>
         </div>
         <br>
@@ -171,9 +168,13 @@
           </div>
         </div>
       </div>
-   
 
-
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+  <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
+  <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+  <!--Pie de Página-->
   <footer>
     <section class="contactos">
       
@@ -258,33 +259,6 @@
      </ul>
    </div>
     </section> >
-  
+  </div>  
   </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
-  <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
-  <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
-  <script>
-    // Example starter JavaScript for disabling form submissions if there are invalid fields
-    (function() {
-      'use strict';
-      window.addEventListener('load', function() {
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.getElementsByClassName('needs-validation');
-        // Loop over them and prevent submission
-        var validation = Array.prototype.filter.call(forms, function(form) {
-          form.addEventListener('submit', function(event) {
-            if (form.checkValidity() === false) {
-              event.preventDefault();
-              event.stopPropagation();
-            }
-            form.classList.add('was-validated');
-          }, false);
-        });
-      }, false);
-    })();
-    </script>
-
-  </body>
-  
 </html>

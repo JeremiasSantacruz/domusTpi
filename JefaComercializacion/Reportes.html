@@ -4,18 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/css/bootstrap/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
+    <!--ESTILOS CSS-->
+    <link rel="stylesheet" type="text/css" href="../assets/css/headerYfooter/estilos.css" >
     <title>Reportes</title>
   </head>
   <style>
-    .container{
-      position:relative;
-      top:100px;  
-    }
     nav{
       background:rgb(186, 74, 0);
     }
@@ -33,69 +28,84 @@
  <body>
   <header>
     <nav class="navbar navbar justify-content-center fixed-top navbar-expand-lg navbar-light">
-      <div class="logo">
-        <img src="../Imagenes/Logo.png" class="img-thumbnail mt-1 offset-4 rounded-circle" alt="..." height="70" width="70">
-      </div> 
-      <div class="container-fluid">
-        <a class="navbar-brand offset-4 font-weight-bold" href="Principal.html">PRINCIPAL</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="navbar-brand offset-2 font-weight-bold" href="Inmuebles.html">INMUEBLES</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle font-weight-bold offset-4" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                TAREAS
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item font-weight-bold" href="Agenda.html">Agendas</a></li>
-                <li><a class="dropdown-item font-weight-bold" href="Reportes.html">Reportes</a></li>
-                <li><a class="dropdown-item font-weight-bold" href="Propiedades.html">Propiedades</a></li>
-                <li><a class="dropdown-item font-weight-bold" href="Clientes.html">Clientes</a></li>
-              </ul>
-            </li>
-          </ul>
+        <div class="logo">
+            <img src="../Imagenes/Logo.png" class="img-thumbnail mt-1 offset-4 rounded-circle" alt="..." height="70" width="70">
+         </div> 
+        <div class="container-fluid">
+            <a class="navbar-brand offset-4 font-weight-bold" href="Principal.html">PRINCIPAL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="navbar-brand offset-2 font-weight-bold" href="Inmuebles.html">INMUEBLES</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font-weight-bold offset-4 nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px;">
+                        TAREAS
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item font-weight-bold" href="Agenda.html">Agendas</a></li>
+                          <li><a class="dropdown-item font-weight-bold" href="Reportes.html">Generar reportes</a></li>
+                          <li><a class="dropdown-item font-weight-bold" href="Propiedades.html">Listado de propiedades</a></li>
+                          <li><a class="dropdown-item font-weight-bold" href="Clientes.html">Archivo de clientes</a></li>
+                      </ul> 
+                    </li>
+                 </ul>
+            </div>
         </div>
-      </div>
-      <div class="usuario">
-        <div class="col-1">
-          <div class="row-3">
-            <img src="../Imagenes/perfil.png" alt="..." width = 50 height = 50>
-          </div>
-          <h6 class="text-white">Usuario</h6>
-        </div>
-      </div>
-    </nav>
- </header>
+        <div class="usuario">
+        <ul>
+            <li>
+                <div class="row-3 offset-3">
+                     <img src="../Imagenes/perfil.png" alt="..." width = 30 height = 30>
+                </div>
+            </li>
+             <li>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:16px;">
+                        Usuario
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Configuración</a></li>
+                        <li><a class="dropdown-item" href="../internauta/Principal.html">Salir</a></li>
+                    </ul>
+                 </div>
+             </li>
+        </ul>
+     </div>
+ </nav>
+</header>
     <!-- Cuerpo --> 
-    <div class="container mt-5">
-      <form>
-          <div class="row mt-4">
-            <label for="tipo" class="col-sm-2 text-end">Tipo de reporte</label>
-            <select name="tipo" id="tipo" class="col" required>
+    <div class="container">
+      <h1 class="text-center">Generar reportes</h1>
+      <form class="needs-validation" novalidate action="../Informes/ReporteJefaComercializacion.pdf">
+          <div class="row align-items-center mt-4">
+            <label for="tipo" class="col-sm-2 form-label text-end">Tipo de reporte</label>
+            <select name="tipo" class="col form-select" id="validationCustom01" required>
                 <option value="">Tipo de reporte</option>
                 <option value="1">Ventas</option>
                 <option value="2">Alquileres</option>
                 <option value="3">Clientes</option>
                 <option value="4">Propiedades</option>
             </select>
+            <div class="invalid-feedback text-center">Seleccione una opción</div>
           </div>
-          <div class="row mt-4">
-              <label for="tiempo" class="col-sm-2 text-end">Periodo de tiempo</label>
-              <select name="periodo" id="periodo" class="col" required>
+          <div class="row align-items-center mt-4">
+              <label for="tiempo" class="col-sm-2 form-label text-end">Periodo de tiempo</label>
+              <select name="periodo" id="validationCustom01" class="col form-select" required>
                   <option value="">Seleccione un periodo de tiempo</option>
                   <option value="1">Diario</option>
                   <option value="2">Semanal</option>
                   <option value="3">Mensual</option>
                   <option value="4">Anual</option>
               </select>
+              <div class="invalid-feedback text-center">Seleccione una opción</div>
           </div>
-          <div class="row mt-4 justify-content-center">
-              <div class="col-1">
-                <a href="../Informes/ReporteJefaComercializacion.pdf" class="button btn btn-success" type="submit">Generar reporte</a>
+          <div class="row mt-4">
+              <div class="col text-center">
+                <button class="btn btn-success" type="submit">Generar reporte</button>
               </div>
           </div>
       </form>
@@ -103,6 +113,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
     <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
     <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+    </script>
     <!--Pie de Página-->
     <footer>
         <section class="redes">
