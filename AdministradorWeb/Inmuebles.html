@@ -9,140 +9,144 @@
     <!--ESTILOS CSS-->
     <link rel="stylesheet" type="text/css" href="../assets/css/headerYfooter/estilos.css" > 
     </head>
-    
-
-    <header>
-      <nav class="navbar navbar justify-content-center fixed-top navbar-expand-lg navbar-light">
-          <div class="logo">
-            <img src="../Imagenes/Logo.png" class="img-thumbnail mt-1 offset-4 rounded-circle" alt="..." height="70" width="70">
-          </div> 
-          <div class="container-fluid">
-            <a class="navbar-brand offset-4 font-weight-bold" href="Principal.html">PRINCIPAL</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="navbar-brand offset-2 font-weight-bold" href="Inmuebles.html">INMUEBLES</a>
+    <body>
+      <header>
+        <nav class="navbar navbar justify-content-center fixed-top navbar-expand-lg navbar-light">
+            <div class="logo">
+              <img src="../Imagenes/Logo.png" class="img-thumbnail mt-1 offset-4 rounded-circle" alt="..." height="70" width="70">
+            </div> 
+            <div class="container-fluid">
+              <a class="navbar-brand offset-4 font-weight-bold" href="Principal.html">PRINCIPAL</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="navbar-brand offset-2 font-weight-bold" href="Inmuebles.html">INMUEBLES</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle font-weight-bold offset-4 nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px;">
+                      TAREAS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item font-weight-bold" href="AddUser.html">Añadir usuario</a></li>
+                      <li><a class="dropdown-item font-weight-bold" href="EliminarUsuario.html">Eliminar usuario</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="usuario">
+              <ul>
+                <li>
+                 <div class="row-3 offset-3">
+                   <img src="../Imagenes/perfil.png" alt="..." width = 30 height = 30>
+                 </div>
                 </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle font-weight-bold offset-4 nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px;">
-                    TAREAS
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item font-weight-bold" href="AddUser.html">Añadir usuario</a></li>
-                    <li><a class="dropdown-item font-weight-bold" href="EliminarUsuario.html">Eliminar usuario</a></li>
-                  </ul>
-                </li>
+                <li>
+                 <div class="dropdown">
+                   <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:16px;">
+                     Usuario
+                   </button>
+                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                     <li><a class="dropdown-item" href="#">Configuración</a></li>
+                     <li><a class="dropdown-item" href="../internauta/Principal.html">Salir</a></li>
+                   </ul>
+                 </div>
+                 </li>
               </ul>
+    
+            </div>
+        </nav>
+     </header>
+      <div class="container">
+        <div class="row offset-2 col-md-8 "> <!--fila 1-->
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark" height="200" width="200">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
             </div>
           </div>
-          <div class="usuario">
-            <ul>
-              <li>
-               <div class="row-3 offset-3">
-                 <img src="../Imagenes/perfil.png" alt="..." width = 30 height = 30>
-               </div>
-              </li>
-              <li>
-               <div class="dropdown">
-                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:16px;">
-                   Usuario
-                 </button>
-                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                   <li><a class="dropdown-item" href="#">Configuración</a></li>
-                   <li><a class="dropdown-item" href="../internauta/Principal.html">Salir</a></li>
-                 </ul>
-               </div>
-               </li>
-            </ul>
-  
-          </div>
-      </nav>
-   </header>
-
-    <body>
-      <div class="container">
-        <div class="row offset-2 col-md-8 mt-5 "> <!--fila 1-->
           <div class="col-sm">
-            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-            <a href="#" role="button" class="btn-link text-dark lead">Casa chiquita</a>
-            <p>Tipo de contrato:</p>
-            <p>Dirección:</p>
-            <p>Tipo: </p>
-            <p>Precio:</p>
+            <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
+            </div>
           </div>
           <div class="col-sm">
-            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-            <a href="#" role="button" class="btn-link text-dark lead">Alto chalet</a>
-            <p>Tipo de contrato:</p>
-            <p>Dirección:</p>
-            <p>Tipo: </p>
-            <p>Precio:</p>
-          </div>
-          <div class="col-sm">
-            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-            <a href="#" role="button" class="btn-link text-dark lead">Quinta grande</a>
-            <p>Tipo de contrato:</p>
-            <p>Dirección:</p>
-            <p>Tipo: </p>
-            <p>Precio:</p>
+            <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
+            </div>
           </div>
         </div>
         <div class="row offset-2 col-md-8 mt-5 "> <!--fila 2-->
             <div class="col-sm">
-              <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-              <a href="#" role="button" class="btn-link text-dark lead">Una casa</a>
-              <p>Tipo de contrato:</p>
-              <p>Dirección:</p>
-              <p>Tipo: </p>
-              <p>Precio:</p>
+              <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
+              </div>
             </div>
             <div class="col-sm">
-              <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-              <a href="#" role="button" class="btn-link text-dark lead">El departamento</a>
-              <p>Tipo de contrato:</p>
-              <p>Dirección:</p>
-              <p>Tipo: </p>
-              <p>Precio:</p>
+              <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
+              </div>
             </div>
             <div class="col-sm">
-              <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-              <a href="#" role="button" class="btn-link text-dark lead">Una cochera</a>
-              <p>Tipo de contrato:</p>
-              <p>Dirección:</p>
-              <p>Tipo: </p>
-              <p>Precio:</p>
+              <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
+              </div>
+            </div>
+        </div>
+        <div class="row offset-2 col-md-8 mt-5 "> <!--fila 3-->
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
             </div>
           </div>
-          <div class="row offset-2 col-md-8 mt-5 "> <!--fila 3-->
-            <div class="col-sm">
-              <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-              <a href="#" role="button" class="btn-link text-dark lead">suite</a>
-              <p>Tipo de contrato:</p>
-              <p>Dirección:</p>
-              <p>Tipo: </p>
-              <p>Precio:</p>
-            </div>
-            <div class="col-sm">
-              <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-              <a href="#" role="button" class="btn-link text-dark lead">Local comercial</a>
-              <p>Tipo de contrato:</p>
-              <p>Dirección:</p>
-              <p>Tipo: </p>
-              <p>Precio:</p>
-            </div>
-            <div class="col-sm">
-              <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
-              <a href="#" role="button" class="btn-link text-dark lead">Casa pequeña</a>
-              <p>Tipo de contrato:</p>
-              <p>Dirección:</p>
-              <p>Tipo: </p>
-              <p>Precio:</p>
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
             </div>
           </div>
-         </div>
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="col text-center">
+          <div class="btn-group" role="group">
+            <button class="btn-link">Anterior</button>
+            <button class="btn-link">Siguiente</button>
+          </div>
+        </div>
+      </div>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
         <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
         <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
@@ -166,7 +170,7 @@
        </div>
      </section>   
    </footer>
-    </body>
+  </body>
 
     
 
