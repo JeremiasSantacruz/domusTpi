@@ -19,10 +19,9 @@ body {
     border-radius: 10px;
     background: slategray;
 }
-input {
-    font-size: 20px;
-    width: 82%;
+#validationCustom01 {
     padding: 10px;
+    margin: 10px;
     border: none;
     text-align: center;
     align-items: center;
