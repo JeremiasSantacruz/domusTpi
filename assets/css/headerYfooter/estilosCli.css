@@ -1,6 +1,7 @@
 nav{
     background:rgb(186, 74, 0);
     }
+    
   footer .redes{
     position: relative;
     top:350px;
@@ -9,6 +10,7 @@ nav{
   
   }
   
+
   footer label{
     color:black;
   }
@@ -30,3 +32,4 @@ nav{
 ul{
   list-style-type: none;
 }
+

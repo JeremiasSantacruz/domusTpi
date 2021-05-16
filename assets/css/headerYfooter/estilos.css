@@ -12,6 +12,12 @@ footer .redes{
 footer label{
   color:black;
 }
+
+footer .contactos{
+  position: relative;
+  top:300px;
+}
+
 section {
     position: relative;
     top: 100px;
@@ -38,3 +44,4 @@ ul{
 table {text-align-last: center;}
 
 #accordionExample{background: rgb(112, 123, 124 );}
+
