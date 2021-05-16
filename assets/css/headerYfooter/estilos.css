@@ -6,6 +6,7 @@ footer .redes{
   top:350px;
   background:rgb(186, 74, 0) ;
   height: 100px;
+  width: auto;
 
 }
 
@@ -16,6 +17,14 @@ section {
     position: relative;
     top: 100px;
 }
-div .resultados{
-  background: black;
+ul{
+  list-style-type: none;
+}
+.usuario{
+  position: relative;
+  right: 80px;
+}
+.container{
+  position:relative;
+  top:150px;  
 }
