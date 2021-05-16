@@ -18,5 +18,10 @@ footer label{
 }
 
 body{
-  background:rgb(254, 254, 254);
+  background: gray;
+}
+
+.boton_editar_img{
+ margin-left: 200px;
+ margin-bottom: 30px;  
 }
