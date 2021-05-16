@@ -43,8 +43,9 @@
                           TAREAS
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item font-weight-bold" href="Agenda.html">Agenda</a></li>
-                              <li><a class="dropdown-item font-weight-bold" href="carga.html">Nueva propiedad</a></li>
+                              <li><a class="dropdown-item font-weight-bold" href="Transacciones.html">Movimientos</a></li>
+                              <li><a class="dropdown-item font-weight-bold" href="Reportes.html">Generar reportes</a></li>
+                              <li><a class="dropdown-item font-weight-bold" href="Clientes.html">Archivo de clientes</a></li>
                           </ul> 
                       </li>
                    </ul>
@@ -73,107 +74,25 @@
    </nav>
   </header>
     <!-- Cuerpo --> 
-    
-    <div class="container-fluid mt-5">
-      <br>
-      <div class="row mt-5">
-        <div class="col-sm">
-          <label for="FechaMin" class="col-3">FechaMin</label>
-          <input class="fecha" type="date" placeholder="DD/MM/AAAA">
+    <div class="container">
+      <h1 class="text-center">Buscar cliente</h1>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="row align-items-center mt-5">
+          <label for="validationCustom01" class="form-label col-2">Código de cliente</label>
+          <input type="number" class="form-control col" id="validationCustom01" required>
+          <div class="invalid-feedback">Ingrese número de cliente</div>
         </div>
-        <div class="col-sm">
-            <label for="FechaMax" class="col-3">FechaMax</label>
-            <input class="fecha" type="date" placeholder="DD/MM/AAAA">
-        </div>
-        <div class="col-sm-2 text-center">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">Caja de ventas</label>
-        </div>
-        <div class="col-sm-2 text-center">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">Caja de alquileres</label>
-        </div>
-        <div class="col-sm-2 text-center">
-          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-          <label class="form-check-label" for="flexCheckDefault">Entradas/Salidas</label>
-        </div>
-      </div>
-      <br>
-      <div class="table-responsive">
-          <table class="table">
-              <thead>
-                  <tr class="encabezado bg-dark">
-                      <th scope="col"></th>
-                      <th scope="col">Tipo</th>
-                      <th scope="col">Caja</th>
-                      <th scope="col">Fecha</th>
-                      <th scope="col">Hora</th>
-                      <th scope="col">Monto</th>
-                      <th scope="col"></th>
-                  </tr>
-              </thead>
-              <tbody>
-                  <tr>
-                      <th scope="row"></th>
-                      <td>Entrada</td>
-                      <td>Alquiler</td>
-                      <td>26/05/2021</td>
-                      <td>10:22</td>
-                      <td>$10000</td>
-                  </tr>
-                  <tr>
-                      <th scope="row"></th>
-                      <td>Entrada</td>
-                      <td>Alquiler</td>
-                      <td>28/05/2021</td>
-                      <td>17:38</td>
-                      <td>$10000</td>
-                  </tr>
-                  <tr>
-                      <th scope="row"></th>
-                      <td>Salida</td>
-                      <td>Venta</td>
-                      <td>30/05/2021</td>
-                      <td>8:27</td>
-                      <td>$17000</td>
-                  </tr>
-              </tbody>
-          </table>
-      </div>
-      <br>
-      <hr size="20">
-      <br>
-      <div class="row justify-content-center">
-        <div class="col-10">
-          <div class="row">
-            <div class="co-4 text-center">
-              <h4>Total de transacciones</h4>
-              <h5>Nro transacciones</h5>
-            </div>
-            <div class="col text-center">
-              <h4>Total ingresos</h4>
-              <h5>Total en $</h5>
-            </div>
-            <div class="col text-center">
-              <h4>Total egresos</h4>
-              <h5>Total en $</h5>
-            </div>
-            <div class="col text-center">
-              <h4>Total general</h4>
-              <h5>Total en $</h5>
-            </div>
+        <div class="row mt-4">
+          <div class="col text-center">
+            <button class="btn btn-primary" type="submit">Buscar</button>
           </div>
         </div>
-      </div>
-      <div class="row mt-4 justify-content-center">
-        <div class="col text-center">
-          <a href="Principal.html">
-            <button class="btn btn-success" onclick="print()">Confirmar</button>
-          </a>
-          <button class="btn btn-danger" onclick="Cancelar()">Cancelar</button>
-        </div>
-      </div>
+      </form>
       <br>
+      <hr>
+      <br>
+      <h3>Datos encontrados</h3>
+      <p>Nombre y apellido:</p>
     </div>
     </div>
     <footer>
@@ -200,6 +119,26 @@
       <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
       <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
     <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
       function Cancelar() {alert('No se ha generado el informe')}
     </script>
 

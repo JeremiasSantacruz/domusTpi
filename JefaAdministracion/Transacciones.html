@@ -12,10 +12,8 @@
     <title>Movimientos</title>
     
   </head>
- 
-
   <body>
-   <header>
+    <header>
       <nav class="navbar navbar justify-content-center fixed-top navbar-expand-lg navbar-light">
           <div class="logo">
               <img src="../Imagenes/Logo.png" class="img-thumbnail mt-1 offset-4 rounded-circle" alt="..." height="70" width="70">
@@ -35,8 +33,9 @@
                           TAREAS
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item font-weight-bold" href="Agenda.html">Agenda</a></li>
-                              <li><a class="dropdown-item font-weight-bold" href="carga.html">Nueva propiedad</a></li>
+                              <li><a class="dropdown-item font-weight-bold" href="Transacciones.html">Movimientos</a></li>
+                              <li><a class="dropdown-item font-weight-bold" href="Reportes.html">Generar reportes</a></li>
+                              <li><a class="dropdown-item font-weight-bold" href="Clientes.html">Archivo de clientes</a></li>
                           </ul> 
                       </li>
                    </ul>
@@ -65,8 +64,8 @@
    </nav>
   </header>
     <!-- Cuerpo --> 
-    <div class="container-fluid mt-5">
-      <br>
+    <div class="container">
+      <h1 class="text-center">Movimientos</h1>
       <div class="row mt-5">
         <div class="col-sm text-center">
           <label for="FechaMin" class="col-3">FechaMin</label>
@@ -81,7 +80,7 @@
       <div class="table-responsive">
           <table class="table">
               <thead>
-                  <tr class="encabezado bg-dark">
+                  <tr class="encabezado bg-primary">
                       <th scope="col"></th>
                       <th scope="col">Tipo</th>
                       <th scope="col">Caja</th>

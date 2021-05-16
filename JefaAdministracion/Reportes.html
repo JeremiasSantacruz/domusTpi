@@ -13,16 +13,12 @@
     
   </head>
   <style>
-    
     .fecha {
       position: relative;
       left: 30px;
     }
   </style>
-
-
   <body>
-
     <header>
       <nav class="navbar navbar justify-content-center fixed-top navbar-expand-lg navbar-light">
           <div class="logo">
@@ -43,8 +39,9 @@
                           TAREAS
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item font-weight-bold" href="Agenda.html">Agenda</a></li>
-                              <li><a class="dropdown-item font-weight-bold" href="carga.html">Nueva propiedad</a></li>
+                              <li><a class="dropdown-item font-weight-bold" href="Transacciones.html">Movimientos</a></li>
+                              <li><a class="dropdown-item font-weight-bold" href="Reportes.html">Generar reportes</a></li>
+                              <li><a class="dropdown-item font-weight-bold" href="Clientes.html">Archivo de clientes</a></li>
                           </ul> 
                       </li>
                    </ul>
@@ -72,11 +69,9 @@
        </div>
    </nav>
   </header>
-
-    <!-- Cuerpo --> 
-    
-    <div class="container-fluid mt-5">
-      <br>
+    <!-- Cuerpo -->
+    <div class="container">
+      <h1 class="text-center">Generar reportes</h1>
       <div class="row mt-5">
         <div class="col-sm">
           <label for="FechaMin" class="col-3">FechaMin</label>
@@ -103,7 +98,7 @@
       <div class="table-responsive">
           <table class="table">
               <thead>
-                  <tr class="encabezado bg-dark">
+                  <tr class="encabezado bg-primary">
                       <th scope="col"></th>
                       <th scope="col">Tipo</th>
                       <th scope="col">Caja</th>
@@ -142,12 +137,12 @@
           </table>
       </div>
       <br>
-      <hr size="20">
+      <hr>
       <br>
       <div class="row justify-content-center">
         <div class="col-10">
           <div class="row">
-            <div class="co-4 text-center">
+            <div class="col-4 text-center">
               <h4>Total de transacciones</h4>
               <h5>Nro transacciones</h5>
             </div>
@@ -166,15 +161,14 @@
           </div>
         </div>
       </div>
+      <br>
       <div class="row mt-4 justify-content-center">
         <div class="col text-center">
           <button class="btn btn-success" onclick="print()">Confirmar</button>
-          <button class="btn btn-danger" onclick="Cancelar()">Cancelar</button>
+          <a href="Principal.html" class="btn btn-danger" onclick="Cancelar()">Cancelar</a>
         </div>
       </div>
     </div>
-    </div>
-    
     <footer>
       <section class="redes">
         <h5 class="text-center font-weight-bold">Seguinos</h5>

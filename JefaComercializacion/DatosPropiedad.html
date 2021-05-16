@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
-
   <head>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,11 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!--ESTILOS CSS-->
     <link rel="stylesheet" type="text/css" href="../assets/css/headerYfooter/estilos.css" >
-    <title>Reportes</title>
+    <title>Propiedad</title>
+
   </head>
 
   <body>
-    <!-- Encabezado -->
     <header>
       <nav class="navbar navbar justify-content-center fixed-top navbar-expand-lg navbar-light">
           <div class="logo">
@@ -35,8 +35,10 @@
                           TAREAS
                           </a>
                           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                              <li><a class="dropdown-item font-weight-bold" href="Reportes.html">Reportes</a></li>
-                          </ul> 
+                            <li><a class="dropdown-item font-weight-bold" href="Agenda.html">Agendas</a></li>
+                            <li><a class="dropdown-item font-weight-bold" href="Reportes.html">Generar reportes</a></li>
+                            <li><a class="dropdown-item font-weight-bold" href="Clientes.html">Archivo de clientes</a></li>
+                        </ul> 
                       </li>
                    </ul>
               </div>
@@ -64,67 +66,119 @@
    </nav>
   </header>
     <!-- Cuerpo --> 
-    <div class="container mt-5">
-      <div class="row container-fluid"> <!--Buscador-->
+    <div class="container-fluid">
+      <div class="container">
+        <!--Primera fila-->
+        <div class="row mt-5">
+          <div class="col-lg-6">
+            <img src="https:/via.placeholder.com/500x300/" class="card-img" alt="...">
+          </div>
+          <div class="col-lg-6">
+            <h2><b>Una casa mediana</b></h2>
+            <br>
+            <div class="col-sm">
+              <h4>Codigo Inmueble: 1251</h4>
+              <h4>Tipo de Inmueble: Casa</h4>
+              <h4>Opciones de contrato: Venta</h4>
+              <h4>Cantidad de ambientes: 5</h4>
+              <br>
+              <div class="row text-start">
+                <div class="col-md-4">
+                  <h4>Dormitorios: 2</h4>
+                </div>
+                <div class="col-md-3">
+                  <h4>Baños: 1</h4>
+                </div>
+                <div class="col-md-5">
+                  <h4>Precio: $2.000.000</h4>
+                </div>
+              </div>
+              <br>
+              <h4>Direccion: Av. San Maritn 856, Resistencia, Chaco</h4>
+              <div class="row">
+                <div class="col text-center">
+                  <a href="https://www.google.com/maps/place/Av.+San+Mart%C3%ADn+856,+H3504EJA+Resistencia,+Chaco/@-27.4615719,-58.9920113,17z/data=!3m1!4b1!4m5!3m4!1s0x94450c9333b63f87:0xc284443d177f5cb3!8m2!3d-27.4615719!4d-58.9898226" target="_blank" role="button" class="bnt btn-link text-dark">Ver mapa</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!--Segunda fila-->
+        <div class="conteiner">
+          <div class="row">
+            <div class="col-md-1">
+              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+            </div>
+            <div class="col-md-1">
+              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+            </div>
+            <div class="col-md-1">
+              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+            </div>
+            <div class="col-md-1">
+              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+            </div>
+            <div class="col-md-1">
+              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+            </div>
+            <div class="col-md-1">
+              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+            </div>
+            <div class="col-sm-3">
+              <h5>Propietario: Pepe Argento</h5>
+              <h5>Nro. Propietario: 0180</h5>
+              <h5>Tipo: Particular</h5>
+            </div>
+            <div class="col-sm-3">
+              <h5>DNI Propietario: 35.489.612</h5>
+              <h5>teléfono: 0362-123456</h5>
+              <h5>Email: elpropietario@gmail.com</h5>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!--Otras Propiedades-->
+        <div class="text-center">
+          <h1>Otras Propiedades</h1>
+        </div>
+        <br> 
+        <div class="row">
           <div class="col-sm">
-            <label for="FechaMin" class="col-4">FechaMin</label>
-            <input type="date" placeholder="DD/MM/AAAA">
+            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+            <a href="#" role="button" class="btn-link text-dark lead">Casa chiquita</a>
+            <p>Tipo de contrato:</p>
+            <p>Dirección:</p>
+            <p>Tipo: </p>
+            <p>Precio:</p>
           </div>
           <div class="col-sm">
-              <label for="FechaMax" class="col-4">FechaMax</label>
-              <input type="date" placeholder="DD/MM/AAAA">
+            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+            <a href="#" role="button" class="btn-link text-dark lead">Alto chalet</a>
+            <p>Tipo de contrato:</p>
+            <p>Dirección:</p>
+            <p>Tipo: </p>
+            <p>Precio:</p>
           </div>
-          <div class="col-sm-3">
-            <select class="form-select bg-primary" aria-label="Default select example">
-                <option selected>Tipo</option>
-                <option value="1">Venta</option>
-                <option value="2">Alquiler</option>
-                <option value="3">Clientes</option>
-                <option value="4">Propiedades</option>
-              </select>
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+            <a href="#" role="button" class="btn-link text-dark lead">Quinta grande</a>
+            <p>Tipo de contrato:</p>
+            <p>Dirección:</p>
+            <p>Tipo: </p>
+            <p>Precio:</p>
           </div>
-      </div>
-      <br>
-      <div> <!--Tabla-->
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col">Descripción</th>
-                <th scope="col"></th>
-                <th scope="col"></th>
-                <th scope="col" class="text-center">Fecha emision</th>
-                <th scope="col"></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row"></th>
-                <td colspan="3">Reporte 1</td>
-                <td class="text-center">06/05/2021</td>
-                <td class="text-end">
-                  <a href="#" class="btn btn-primary">Descargar</a>
-                  <a href="../Informes/ReporteGerenteGral.pdf" class="btn btn-success">Imprimir</a>
-                </td>
-              </tr>
-              <!--
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-              -->
-            </tbody>
-          </table>
+          <div class="col-sm">
+            <img src="https:/via.placeholder.com/100x50/" alt="..." class="card-img">
+            <a href="#" role="button" class="btn-link text-dark lead">Una casa</a>
+            <p>Tipo de contrato:</p>
+            <p>Dirección:</p>
+            <p>Tipo: </p>
+            <p>Precio:</p>
+          </div>
+        </div>
       </div>
     </div>
-    <br>
     <footer>
       <section class="redes">
         <h5 class="text-center font-weight-bold">Seguinos</h5>
@@ -142,11 +196,12 @@
             </li>
           </ul>
         </div>
-      </section> 
-     </footer> 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
-      <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
-      <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
+      </section>   
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
+
   </body>
   
 </html>
