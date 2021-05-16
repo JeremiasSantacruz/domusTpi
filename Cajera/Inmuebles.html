@@ -9,60 +9,109 @@
     <!--ESTILOS CSS-->
     <link rel="stylesheet" type="text/css" href="../assets/css/headerYfooter/estilos.css" > 
     </head>
-    
-
     <header>
       <nav class="navbar navbar justify-content-center fixed-top navbar-expand-lg navbar-light">
           <div class="logo">
-              <img src="../Imagenes/Logo.png" class="img-thumbnail mt-1 offset-4 rounded-circle" alt="..." height="70" width="70">
-           </div> 
+            <img src="../Imagenes/Logo.png" class="img-thumbnail mt-1 offset-4 rounded-circle" alt="..." height="70" width="70">
+          </div> 
           <div class="container-fluid">
-              <a class="navbar-brand offset-4 font-weight-bold" href="Principal.html">PRINCIPAL</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                          <a class="navbar-brand offset-2 font-weight-bold" href="Inmuebles.html">INMUEBLES</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle font-weight-bold offset-4 nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px;">
-                          TAREAS
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item font-weight-bold" href="Agenda.html">Agendas</a></li>
-                            <li><a class="dropdown-item font-weight-bold" href="Reportes.html">Generar reportes</a></li>
-                            <li><a class="dropdown-item font-weight-bold" href="Propiedades.html">Listado de propiedades</a></li>
-                            <li><a class="dropdown-item font-weight-bold" href="Clientes.html">Archivo de clientes</a></li>
-                        </ul>
-                      </li>
-                   </ul>
-              </div>
+            <a class="navbar-brand offset-4 font-weight-bold" href="Principal.html">PRINCIPAL</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="navbar-brand offset-2 font-weight-bold" href="Inmuebles.html">INMUEBLES</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle font-weight-bold offset-4 nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px;">
+                    TAREAS
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item font-weight-bold" href="Alquileres.html">Caja de alquileres</a></li>
+                    <li><a class="dropdown-item font-weight-bold" href="Ventas.html">Caja de ventas</a></li>
+                    <li><a class="dropdown-item font-weight-bold" data-bs-toggle="modal" data-bs-target="#EntradasSalidas">Entradas/salidas</a></li>
+                    <li><a class="dropdown-item font-weight-bold" href="Cierre.html">Cierre de caja</a></li>
+                    <li><a class="dropdown-item font-weight-bold" href="Transacciones.html">Movimientos</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="usuario">
-          <ul>
+            <ul>
               <li>
-                  <div class="row-3 offset-3">
-                       <img src="../Imagenes/perfil.png" alt="..." width = 30 height = 30>
-                  </div>
+               <div class="row-3 offset-3">
+                 <img src="../Imagenes/perfil.png" alt="..." width = 30 height = 30>
+               </div>
               </li>
-               <li>
-                  <div class="dropdown">
-                      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:16px;">
-                          Usuario
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="#">Configuración</a></li>
-                          <li><a class="dropdown-item" href="../internauta/Principal.html">Salir</a></li>
-                      </ul>
-                   </div>
+              <li>
+               <div class="dropdown">
+                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:16px;">
+                   Usuario
+                 </button>
+                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                   <li><a class="dropdown-item" href="#">Configuración</a></li>
+                   <li><a class="dropdown-item" href="../internauta/Principal.html">Salir</a></li>
+                 </ul>
+               </div>
                </li>
-          </ul>
-       </div>
-   </nav>
-  </header>
-
+            </ul>
+  
+          </div>
+      </nav>
+   </header>
+   <!-- Modal -->
+  <div class="modal fade" id="EntradasSalidas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Una entrada</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="row justify-content-center mt-3">
+                <label for="Fecha" class="col-sm-2 col-form-label col-form-label-sm">Fecha</label>
+                <div class="col-sm">
+                    <input type="date" class="form-control form-control-sm" id="colFormLabelSm" placeholder="DD/MM/AAAA">
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <label for="Hora" class="col-sm-2 col-form-label col-form-label-sm">Hora</label>
+                <div class="col-sm">
+                    <input type="time" class="form-control form-control-sm" id="colFormLabelSm" placeholder="00:00">
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <label for="concepto" class="col-sm-2 col-form-label col-form-label-sm">Concepto</label>
+                <div class="col-sm">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm" required>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <label for="monto" class="col-sm-2 col-form-label col-form-label-sm">Monto</label>
+                <div class="col-sm">
+                    <input type="number" class="form-control form-control-sm" id="colFormLabelSm" required>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <select class="form-select form-select-sm" id="validationDefault03" required>
+                    <option selected disabled value="">Tipo</option>
+                    <option value="1">Entrada</option>
+                    <option value="2">Salida</option>
+                </select>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
     <body>
          <div class="container">
             <div class="row offset-2 col-md-8 "> <!--fila 1-->

@@ -11,10 +11,6 @@
     <title>Clientes actuales</title>
   </head>
   <style>
-    .container{
-      position:relative;
-      top:100px;  
-    }
     nav{
       background:rgb(186, 74, 0);
     }
@@ -52,6 +48,7 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                           <li><a class="dropdown-item font-weight-bold" href="Agenda.html">Agendas</a></li>
                           <li><a class="dropdown-item font-weight-bold" href="Reportes.html">Generar reportes</a></li>
+                          <li><a class="dropdown-item font-weight-bold" href="Propiedades.html">Listado de propiedades</a></li>
                           <li><a class="dropdown-item font-weight-bold" href="Clientes.html">Archivo de clientes</a></li>
                       </ul> 
                     </li>
@@ -81,12 +78,12 @@
  </nav>
 </header>
     <!-- Cuerpo --> 
-    <div class="container mt-5">
+    <div class="container">
         <style>
-            table {text-align-last: center;}
+          table {text-align-last: center;}
         </style>
-        <h1 class="text-center">Listado de propiedades</h1>
-        <div class="row mt-5 justify-content-center">
+        <h1 class="text-center">Listado de clientes actuales</h1>
+        <div class="row mt-4 justify-content-center">
             <div class="col text-center">
                 <a href="Actuales.html" type="submit" class="btn btn-primary">Actuales</a>
                 <a href="Antiguos.html" type="submit" class="btn btn-primary">Antiguos</a>
@@ -96,7 +93,8 @@
         <br>
         <hr>
         <br>
-        <table class="table">
+        <div class="table-responsive">
+          <table class="table">
             <thead>
                 <tr>
                     <th scope="col"></th>
@@ -143,7 +141,8 @@
                     </td>
                 </tr>
             </tbody>
-        </table>
+          </table>
+        </div>
         <div class="modal fade" id="Detalles" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
