@@ -38,9 +38,12 @@
                              TAREAS
                              </a>
                              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                 <li><a class="dropdown-item font-weight-bold" href="Agenda.html">Agenda</a></li>
-                                 <li><a class="dropdown-item font-weight-bold" href="carga.html">Nueva propiedad</a></li>
-                             </ul> 
+                                <li><a class="dropdown-item font-weight-bold" href="Alquileres.html">Caja de alquileres</a></li>
+                                <li><a class="dropdown-item font-weight-bold" href="Ventas.html">Caja de ventas</a></li>
+                                <li><a class="dropdown-item font-weight-bold" data-bs-toggle="modal" data-bs-target="#EntradasSalidas">Entradas/salidas</a></li>
+                                <li><a class="dropdown-item font-weight-bold" href="Cierre.html">Cierre de caja</a></li>
+                                <li><a class="dropdown-item font-weight-bold" href="Transacciones.html">Movimientos</a></li>
+                              </ul>
                          </li>
                       </ul>
                  </div>
@@ -67,11 +70,58 @@
           </div>
       </nav>
    </header>
+   <!-- Modal -->
+   <div class="modal fade" id="EntradasSalidas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Una entrada</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="row justify-content-center mt-3">
+                <label for="Fecha" class="col-sm-2 col-form-label col-form-label-sm">Fecha</label>
+                <div class="col-sm">
+                    <input type="date" class="form-control form-control-sm" id="colFormLabelSm" placeholder="DD/MM/AAAA">
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <label for="Hora" class="col-sm-2 col-form-label col-form-label-sm">Hora</label>
+                <div class="col-sm">
+                    <input type="time" class="form-control form-control-sm" id="colFormLabelSm" placeholder="00:00">
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <label for="concepto" class="col-sm-2 col-form-label col-form-label-sm">Concepto</label>
+                <div class="col-sm">
+                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm" required>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <label for="monto" class="col-sm-2 col-form-label col-form-label-sm">Monto</label>
+                <div class="col-sm">
+                    <input type="number" class="form-control form-control-sm" id="colFormLabelSm" required>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <select class="form-select form-select-sm" id="validationDefault03" required>
+                    <option selected disabled value="">Tipo</option>
+                    <option value="1">Entrada</option>
+                    <option value="2">Salida</option>
+                </select>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Guardar</button>
+        </div>
+        </form>
+      </div>
+    </div>
+  </div>
     <!-- Cuerpo --> 
     <div class="container mt-5">
-        <style>
-            body {background: rgb(131, 131, 131);}
-        </style>
         <h1 class="text-center">Nuevo pago</h1>
         <form class="row g-3">
             <div class="row mt-5 justify-content-center">
@@ -89,9 +139,9 @@
             </div>
         </form>
         <br>
-        <hr size="15">
+        <hr>
         <br>
-        <div class="Datos row" id="Datos">
+        <div class="row" id="Datos">
             <h1 class="text-center">Propiedad encontrada</h1>
             <div class="row justify-content-center mt-4">
                 <div class="col-10">
@@ -109,7 +159,7 @@
                     <h4>Servicios:</h4>
                     <h4>Precio: $</h4>
                     <br>
-                    <hr size="10">
+                    <hr>
                     <br>
                     <h3>Datos del propietario</h3>
                     <br>
@@ -124,15 +174,16 @@
             </div>
         </div>
         <br>
-        <hr size="15">
+        <hr>
         <br>
         <div class="row">
             <form class="row g-3">
+                <h2 class="text-center">Acentar venta</h3>
                 <div class="row mt-4 justify-content-center">
                     <label for="validationDefault01" class="form-label text-center col-lg-2">Tipo de venta:</label>
                     <div class="col-9">
                         <select class="form-select form-select-sm" id="validationDefalt01" required>
-                            <option selected disabled value="">Tipo de venta</option>
+                            <option selected value="">Tipo de venta</option>
                             <option value="1">Financiada</option>
                             <option value="2">Total</option>
                         </select>
@@ -191,15 +242,15 @@
             <div class="modal-content">
                 <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Desea ver el comprobante</h5>
-                <a href="Tareas.html">
+                <a href="Principal.html">
                     <button type="button" class="btn-close" aria-label="Close"></button>
                 </a>
                 </div>
                 <div class="modal-footer">
-                    <a href="Tareas.html">
+                    <a href="Principal.html">
                         <button type="button" class="btn btn-secondary">No</button>
                     </a>
-                    <a href="prueba.pdf" target="_blank">
+                    <a href="../Informes/ComprobanteVenta.pdf" target="_blank">
                         <button type="button" class="btn btn-primary">Si</button>
                     </a>
                 </div>

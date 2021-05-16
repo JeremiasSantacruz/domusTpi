@@ -9,7 +9,6 @@ footer .redes{
   width: auto;
 
 }
-
 footer label{
   color:black;
 }
@@ -27,4 +26,10 @@ ul{
 .container{
   position:relative;
   top:150px;  
+}
+#carouselExampleControls{
+  background:rgb(112, 123, 124 );
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
 }

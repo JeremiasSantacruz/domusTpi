@@ -1,0 +1,3 @@
+Nombre de los PDF
+PagoAlquiler.pdf (Comprobante de pago de un alquiler)
+ComprobanteVenta.pdf (Comprobante de pago por una venta)
