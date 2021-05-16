@@ -1,5 +1,6 @@
  nav{
   background:rgb(186, 74, 0);
+  height: 100px;
   }
 footer .redes{
   position: relative;
@@ -9,6 +10,7 @@ footer .redes{
   width: auto;
 
 }
+
 footer label{
   color:black;
 }
