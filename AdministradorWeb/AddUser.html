@@ -20,6 +20,7 @@
         form h1 {
           margin-bottom: 20px;
         }
+        
     </style>
 <body>
   <header>
@@ -76,19 +77,19 @@
         <form class="needs-validation" novalidate>
             <h1 class="text-center">Añadir un nuevo usuario</h1>
             <hr>
-            <div class="row align-items-center mt-4">
-                <label for="NombreYApellido" class="col-lg-2">Nombre y Apellido:</label>
-                <input type="text" class="form-control col" id="validationCustom01" required>
-                <div class="invalid-feedback">Ingrese un nombre y apellido</div>
+            <div class="row align-items-center mt-4" >
+              <label for="NombreYApellido" class="col-lg-2" >Nombre y Apellido:</label>
+              <input type="text" class="form-control col" id="validationCustom01" required>
+              <div class="invalid-feedback">Ingrese un nombre y apellido</div>
             </div>
             <div class="row align-items-center mt-4">
-                <label for="dni" class="col-lg-2">DNI:</label>
-                <input type="number" class="form-control col" id="validationCustom01" required>
-                <div class="invalid-feedback">Ingrese un número de documento</div>
+              <label for="dni" class="col-lg-2">DNI:</label>
+              <input type="number" class="form-control col" id="validationCustom01" required>
+              <div class="invalid-feedback">Ingrese un número de documento</div>
             </div>
             <div class="row align-items-center mt-4">
                 <label for="NombreYApellido" class="col-lg-2">Puesto:</label>
-                <select class="form-select col" aria-label="Default select example" required>
+                <select class="form-select col" aria-label="Default select example" id="validationCustom01" required>
                     <option selected value="">Seleccione un puesto</option>
                     <option value="1">Secretario</option>
                     <option value="2">Agente inmobiliario</option>
@@ -128,7 +129,7 @@
             </div>
             <div class="row mt-5 justify-content-center">
                 <div class="col text-center">
-                  <button class="btn btn-success" type="submit">Confirmar</button>
+                  <button class="btn btn-success" type="submit" id="boton">Confirmar</button>
                 </div>
             </div>
         </form>
