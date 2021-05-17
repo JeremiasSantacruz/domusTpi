@@ -121,9 +121,9 @@
     </div>
   </div>
     <!-- Cuerpo --> 
-    <div class="container mt-5">
+    <div class="container">
         <h1 class="text-center">Nuevo pago</h1>
-        <form class="row g-3">
+        <form class="row g-3" action="#Datos">
             <div class="row mt-5 justify-content-center">
                 <label for="validationDefault01" class="form-label text-center col-lg-2">Código propiedad:</label>
                 <div class="col-9">
@@ -132,16 +132,12 @@
             </div>
             <div class="row mt-3">
                 <div class="col text-center">
-                    <a href="#Datos">
-                        <button class="btn btn-primary" type="submit">Buscar</button>
-                    </a>
+                    <button class="btn btn-primary" type="submit">Buscar</button>
                 </div> 
             </div>
         </form>
-        <br>
-        <hr>
-        <br>
-        <div class="row" id="Datos">
+        <hr id="Datos" class="mt-5 mb-5">
+        <div class="row">
             <h1 class="text-center">Propiedad encontrada</h1>
             <div class="row justify-content-center mt-4">
                 <div class="col-10">
@@ -173,9 +169,7 @@
                 </div>
             </div>
         </div>
-        <br>
-        <hr>
-        <br>
+        <hr class="mt-5 mb-5">
         <div class="row">
             <form class="row g-3">
                 <h2 class="text-center">Acentar venta</h3>
