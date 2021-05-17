@@ -78,11 +78,11 @@
       <div class="row mt-5">
         <div class="col-sm">
           <label for="FechaMin" class="col-3">FechaMin</label>
-          <input class="fecha" type="date" placeholder="DD/MM/AAAA">
+          <input class="fecha" type="date" placeholder="DD/MM/AAAA" id="validationCustom01">
         </div>
         <div class="col-sm">
             <label for="FechaMax" class="col-3">FechaMax</label>
-            <input class="fecha" type="date" placeholder="DD/MM/AAAA">
+            <input class="fecha" type="date" placeholder="DD/MM/AAAA" id="validationCustom01">
         </div>
         <div class="col-sm-2 text-center">
           <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -167,8 +167,8 @@
       <br>
       <div class="row mt-4 justify-content-center">
         <div class="col text-center">
-          <button class="btn btn-success" onclick="print()">Confirmar</button>
-          <a href="Principal.html" class="btn btn-danger" onclick="Cancelar()">Cancelar</a>
+          <button class="btn" id="boton" onclick="print()">Confirmar</button>
+          <a href="Principal.html" class="btn" id="boton" onclick="Cancelar()">Cancelar</a>
         </div>
       </div>
     </div>

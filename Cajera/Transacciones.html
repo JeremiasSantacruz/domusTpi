@@ -75,7 +75,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Una entrada</h5>
+          <h5 class="modal-title col text-center" id="exampleModalLabel">Una entrada</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form>
@@ -83,29 +83,29 @@
             <div class="row justify-content-center mt-3">
                 <label for="Fecha" class="col-sm-2 col-form-label col-form-label-sm">Fecha</label>
                 <div class="col-sm">
-                    <input type="date" class="form-control form-control-sm" id="colFormLabelSm" placeholder="DD/MM/AAAA">
+                    <input type="date" class="form-control form-control-sm" id="validationCustom01" placeholder="DD/MM/AAAA">
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <label for="Hora" class="col-sm-2 col-form-label col-form-label-sm">Hora</label>
                 <div class="col-sm">
-                    <input type="time" class="form-control form-control-sm" id="colFormLabelSm" placeholder="00:00">
+                    <input type="time" class="form-control form-control-sm" id="validationCustom01" placeholder="00:00">
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <label for="concepto" class="col-sm-2 col-form-label col-form-label-sm">Concepto</label>
                 <div class="col-sm">
-                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm" required>
+                    <input type="text" class="form-control form-control-sm" id="validationCustom01" required>
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <label for="monto" class="col-sm-2 col-form-label col-form-label-sm">Monto</label>
                 <div class="col-sm">
-                    <input type="number" class="form-control form-control-sm" id="colFormLabelSm" required>
+                    <input type="number" class="form-control form-control-sm" id="validationCustom01" required>
                 </div>
             </div>
             <div class="row mt-3">
-                <select class="form-select form-select-sm" id="validationDefault03" required>
+                <select class="form-select form-select-sm" id="validationCustom01" required>
                     <option selected disabled value="">Tipo</option>
                     <option value="1">Entrada</option>
                     <option value="2">Salida</option>
@@ -113,8 +113,8 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="submit" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn col text-center" id="boton" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn col text-center" id="boton">Guardar</button>
         </div>
         </form>
       </div>
@@ -127,11 +127,11 @@
         <div class="row mt-5">
             <div class="col-sm text-center">
                 <label for="FechaMin" class="col-3">FechaMin</label>
-                <input type="date" placeholder="DD/MM/AAAA">
+                <input type="date" placeholder="DD/MM/AAAA" id="validationCustom01">
               </div>
               <div class="col-sm text-center">
                   <label for="FechaMax" class="col-3">FechaMax</label>
-                  <input type="date" placeholder="DD/MM/AAAA">
+                  <input type="date" placeholder="DD/MM/AAAA" id="validationCustom01">
               </div>
         </div>
         <br>
@@ -157,7 +157,7 @@
                         <td>10:22</td>
                         <td>$10000</td>
                         <td>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
+                            <button class="btn" id="boton" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
                         </td>
                     </tr>
                     <tr>
@@ -168,7 +168,7 @@
                         <td>17:38</td>
                         <td>$10000</td>
                         <td>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
+                            <button class="btn" id="boton" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
                         </td>
                     </tr>
                     <tr>
@@ -179,7 +179,7 @@
                         <td>8:27</td>
                         <td>$17000</td>
                         <td>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
+                            <button class="btn" id="boton" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
                         </td>
                     </tr>
                 </tbody>
@@ -189,7 +189,7 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Detalles del movimiento</h5>
+                  <h5 class="modal-title col text-center" id="exampleModalLabel">Detalles del movimiento</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -204,7 +204,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn col text-center" id="boton" data-bs-dismiss="modal">Cerrar</button>
                 </div>
               </div>
             </div>

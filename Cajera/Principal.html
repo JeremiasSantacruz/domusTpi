@@ -14,6 +14,25 @@
 
   </head>
 
+  <style> 
+    .buscador {
+           background-image: url(../Imagenes/fondoBuscador.jpg);
+           background-size: cover;
+           background-position:center;
+           height: 500px;
+           
+    }
+    h3{
+      position: relative;
+      left: 40px;
+    }
+    
+    
+    .anterior {position: relative; left: 60px;}
+    .siguiente {position: relative; right: 60px;}
+
+ </style>
+
   <body>
     <!-- Encabezado -->
     <header>
@@ -74,7 +93,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Una entrada</h5>
+          <h5 class="modal-title col text-center" id="exampleModalLabel">Una entrada</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form>
@@ -82,29 +101,29 @@
             <div class="row justify-content-center mt-3">
                 <label for="Fecha" class="col-sm-2 col-form-label col-form-label-sm">Fecha</label>
                 <div class="col-sm">
-                    <input type="date" class="form-control form-control-sm" id="colFormLabelSm" placeholder="DD/MM/AAAA">
+                    <input type="date" class="form-control form-control-sm" id="validationCustom01" placeholder="DD/MM/AAAA">
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <label for="Hora" class="col-sm-2 col-form-label col-form-label-sm">Hora</label>
                 <div class="col-sm">
-                    <input type="time" class="form-control form-control-sm" id="colFormLabelSm" placeholder="00:00">
+                    <input type="time" class="form-control form-control-sm" id="validationCustom01" placeholder="00:00">
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <label for="concepto" class="col-sm-2 col-form-label col-form-label-sm">Concepto</label>
                 <div class="col-sm">
-                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm" required>
+                    <input type="text" class="form-control form-control-sm" id="validationCustom01" required>
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <label for="monto" class="col-sm-2 col-form-label col-form-label-sm">Monto</label>
                 <div class="col-sm">
-                    <input type="number" class="form-control form-control-sm" id="colFormLabelSm" required>
+                    <input type="number" class="form-control form-control-sm" id="validationCustom01" required>
                 </div>
             </div>
             <div class="row mt-3">
-                <select class="form-select form-select-sm" id="validationDefault03" required>
+                <select class="form-select form-select-sm" id="validationCustom01" required>
                     <option selected disabled value="">Tipo</option>
                     <option value="1">Entrada</option>
                     <option value="2">Salida</option>
@@ -112,8 +131,8 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="submit" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn col text-center" id="boton" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn col text-center" id="boton">Guardar</button>
         </div>
         </form>
       </div>
@@ -130,55 +149,54 @@
             .siguiente {position: relative; right: 60px;}
         </style>
         <div class="buscador"> <!--Buscador-->
-            <br>
-            <h1 class="text-center"><b>Buscar</b></h1>
-            <br>
-            <div class="row-sm">
-                <div class="col-sm text-center">
-                    <div class="tipo-contrato" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-primary text-dark"><b>Alquiler</b></button>
-                        <button type="button" class="btn btn-primary text-dark"><b>Venta</b></button>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="daFila row mt-5 align-items-center">
-                <div class="col-md-4"></div>
-                <div class="col-lg-2 text-center">
-                    <input type="text" placeholder="Localidad">
-                </div>
-                <div class="col-lg-2 text-center">
-                    <select name="tipo" id="#">
-                        <option value="0">Tipo</option>
-                        <option value="1">Departamento</option>
-                        <option value="2">Casa</option>
-                        <option value="3">Chalet</option>
-                        <option value="4">Local</option>
-                        <option value="5">Casa con local</option>
-                        <option value="6">Cabaña</option>
-                        <option value="7">Cochera</option>
-                    </select>
-                </div>
-                <div class="col-md-4"></div>
-            </div>            
-            <div class="precio row mt-5">
-                <div class="col-3"></div>
-                <div class="col-lg-2 text-center">
-                    <h5><b>Precio $</b></h5>
-                </div>
-                <div class="col-lg-2 text-center">
-                    <input type="number" placeholder="mínimo">
-                </div>
-                <div class="col-lg-2 text-center">
-                    <input type="number" placeholder="máximo">
-                </div>
-                <div class="col-3"></div>
-            </div>
-            <div class="buscar row" id="filtrar">
-                <div class="col-lg text-center">
-                    <a href="#Filtro" class="btn btn-primary" type="button">Buscar</a>
-                </div>
-            </div>
+          <br>
+          <h1 class="text-center" ><b>Buscar</b></h1>
+          <br>
+          <div class="row-sm">
+              <div class="col-sm text-center">
+                  <div class="tipo-contrato" role="group" aria-label="Basic outlined example">
+                      <button type="button" class="btn btn-primary text-dark" id="boton" ><b>Alquiler</b></button>
+                      <button type="button" class="btn btn-primary text-dark" id="boton" ><b>Venta</b></button>
+                  </div>
+              </div>
+          </div>
+          <br>
+          <div class="daFila row mt-4 align-items-center">
+              
+              <div class="col-lg-2 offset-2">
+                  <input type="text" placeholder="Localidad" style="width: 400px;" >
+              </div>
+              <div class="col-lg-2 text-center offset-3" >
+                  <select name="tipo" id="#">
+                      <option value="0">Tipo</option>
+                      <option value="1">Departamento</option>
+                      <option value="2">Casa</option>
+                      <option value="3">Chalet</option>
+                      <option value="4">Local</option>
+                      <option value="5">Casa con local</option>
+                      <option value="6">Cabaña</option>
+                      <option value="7">Cochera</option>
+                  </select>
+              </div>
+              <div class="col-md-4"></div>
+          </div>            
+          <div class="row mt-2">
+
+             <h3 class="text-center text-dark mt-4 offset-5" style="background:rgb(81, 90, 90 ); width: auto;"><b>Precio $</b></h3>
+
+              <div class="col-lg-2 offset-4 mt-2">
+                  <input type="number" placeholder="mínimo">
+              </div>
+              <div class="col-lg-2 text-center mt-2">
+                  <input type="number" placeholder="máximo">
+              </div>
+              <div class="col-3"></div>
+          </div>
+          <div class="row" id="filtrar">
+              <div class="col-lg text-center mt-2">
+                  <a href="#Filtro" class="btn font-weight-bold" type="button" id="boton">Buscar</a>
+              </div>
+          </div>
         </div>
         <br>
         <h2 class="text-center" id="Filtro">Resultados filtrados</h2>

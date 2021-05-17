@@ -8,7 +8,6 @@ footer .redes{
   background:rgb(186, 74, 0) ;
   height: 100px;
   width: auto;
-
 }
 
 footer label{
@@ -35,6 +34,14 @@ ul{
   position:relative;
   top:150px;  
    
+}
+#validationCustom01 {
+  background: rgb(112, 123, 124 );
+}
+#boton {
+  background: rgb(186, 74, 0);
+  color: black;
+  border: rgb(186, 74, 0);
 }
 #carouselExampleControls{
   background:rgb(112, 123, 124 );

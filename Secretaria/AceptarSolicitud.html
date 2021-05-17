@@ -70,14 +70,7 @@
    </nav>
   </header>
     <!-- Cuerpo --> 
-    <div class="container">
-        <style>
-            body {background: rgb(131, 131, 131);}
-            .tareas {position: relative; top: 100px;}
-        </style>
-
-        <!--<div class="row">-->
-            
+    <div class="container"> 
         <!--Tabla-->
         <div class="table-responsive">
             <table class="table">
@@ -118,11 +111,11 @@
             </table>
         </div>
         <div class="row mt-5">
-            <hr size="15">
+            <hr class="mt-5 mb-5">
             <h1 id="horarios" class="text-center">Horarios disponibles</h1>
-            <div class="col text-center">
+            <div class="col text-center mt-4">
                 <label for="Fecha" class="col-sm-1">Fecha</label>
-                <input type="date" placeholder="DD/MM/AAAA">
+                <input type="date" placeholder="DD/MM/AAAA"  id="validationCustom01">
             </div>
         </div>
         <div class="row mt-5">
@@ -144,7 +137,7 @@
                         <td>10:00</td>
                         <td>Agente 1</td>
                         <td>
-                            <a href="Solicitudes.html" type="submit" class="btn btn-success" onclick="Alerta()">Agregar cita</a>
+                            <a href="Solicitudes.html" type="submit" class="btn" id="boton" onclick="Alerta()">Agregar cita</a>
                         </td>
                     </tr>
                     <!--Fila 2-->
@@ -153,7 +146,7 @@
                         <td>10:00</td>
                         <td>Agente 2</td>
                         <td>
-                            <a href="Solicitudes.html" type="submit" class="btn btn-success" onclick="Alerta()">Agregar cita</a>
+                            <a href="Solicitudes.html" type="submit" class="btn" id="boton" onclick="Alerta()">Agregar cita</a>
                         </td>
                     </tr>
                     <!--Fila 3-->
@@ -162,7 +155,7 @@
                         <td>10:30</td>
                         <td>Agente 3</td>
                         <td>
-                            <a href="Solicitudes.html" type="submit" class="btn btn-success" onclick="Alerta()">Agregar cita</a>
+                            <a href="Solicitudes.html" type="submit" class="btn" id="boton" onclick="Alerta()">Agregar cita</a>
                         </td>
                     </tr>
                 </tbody>
@@ -170,7 +163,7 @@
         </div>
         <div class="row">
             <div class="col text-center">
-                <a href="Solicitudes.html" class="btn btn-danger" onclick="return confirm('Esta seguro de cancelar la solicitud')">Cancelar</a>
+                <a href="Solicitudes.html" class="btn" id="boton" onclick="return confirm('Esta seguro de cancelar la solicitud')">Cancelar</a>
             </div>
         </div>
     </div>
@@ -199,6 +192,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
     <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
     <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        function Alerta() {
+            alert('Se ha agendado la cita correctamente')
+        }
+    </script>
 </body>
   
 </html>
