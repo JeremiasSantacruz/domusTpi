@@ -68,14 +68,14 @@
       <div class="row container-fluid"> <!--Buscador-->
           <div class="col-sm">
             <label for="FechaMin" class="col-4">FechaMin</label>
-            <input type="date" placeholder="DD/MM/AAAA">
+            <input type="date" placeholder="DD/MM/AAAA" id="validationCustom01">
           </div>
           <div class="col-sm">
               <label for="FechaMax" class="col-4">FechaMax</label>
-              <input type="date" placeholder="DD/MM/AAAA">
+              <input type="date" placeholder="DD/MM/AAAA" id="validationCustom01">
           </div>
           <div class="col-sm-3">
-            <select class="form-select bg-primary" aria-label="Default select example">
+            <select class="form-select" id="boton" aria-label="Default select example">
                 <option selected>Tipo</option>
                 <option value="1">Venta</option>
                 <option value="2">Alquiler</option>
@@ -103,8 +103,8 @@
                 <td colspan="3">Reporte 1</td>
                 <td class="text-center">06/05/2021</td>
                 <td class="text-end">
-                  <a href="#" class="btn btn-primary">Descargar</a>
-                  <a href="../Informes/ReporteGerenteGral.pdf" class="btn btn-success">Imprimir</a>
+                  <a href="#" class="btn" id="boton">Descargar</a>
+                  <a href="../Informes/ReporteGerenteGral.pdf" class="btn" id="boton">Imprimir</a>
                 </td>
               </tr>
               <!--

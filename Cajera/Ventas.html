@@ -75,7 +75,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Una entrada</h5>
+          <h5 class="modal-title col text-center" id="exampleModalLabel">Una entrada</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form>
@@ -83,29 +83,29 @@
             <div class="row justify-content-center mt-3">
                 <label for="Fecha" class="col-sm-2 col-form-label col-form-label-sm">Fecha</label>
                 <div class="col-sm">
-                    <input type="date" class="form-control form-control-sm" id="colFormLabelSm" placeholder="DD/MM/AAAA">
+                    <input type="date" class="form-control form-control-sm" id="validationCustom01" placeholder="DD/MM/AAAA">
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <label for="Hora" class="col-sm-2 col-form-label col-form-label-sm">Hora</label>
                 <div class="col-sm">
-                    <input type="time" class="form-control form-control-sm" id="colFormLabelSm" placeholder="00:00">
+                    <input type="time" class="form-control form-control-sm" id="validationCustom01" placeholder="00:00">
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <label for="concepto" class="col-sm-2 col-form-label col-form-label-sm">Concepto</label>
                 <div class="col-sm">
-                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm" required>
+                    <input type="text" class="form-control form-control-sm" id="validationCustom01" required>
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <label for="monto" class="col-sm-2 col-form-label col-form-label-sm">Monto</label>
                 <div class="col-sm">
-                    <input type="number" class="form-control form-control-sm" id="colFormLabelSm" required>
+                    <input type="number" class="form-control form-control-sm" id="validationCustom01" required>
                 </div>
             </div>
             <div class="row mt-3">
-                <select class="form-select form-select-sm" id="validationDefault03" required>
+                <select class="form-select form-select-sm" id="validationCustom01" required>
                     <option selected disabled value="">Tipo</option>
                     <option value="1">Entrada</option>
                     <option value="2">Salida</option>
@@ -113,8 +113,8 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="submit" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn col text-center" id="boton" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn col text-center" id="boton">Guardar</button>
         </div>
         </form>
       </div>
@@ -132,7 +132,7 @@
             </div>
             <div class="row mt-3">
                 <div class="col text-center">
-                    <button class="btn btn-primary" type="submit">Buscar</button>
+                    <button class="btn" id="boton" type="submit">Buscar</button>
                 </div> 
             </div>
         </form>
@@ -176,7 +176,7 @@
                 <div class="row mt-4 justify-content-center">
                     <label for="validationDefault01" class="form-label text-center col-lg-2">Tipo de venta:</label>
                     <div class="col-9">
-                        <select class="form-select form-select-sm" id="validationDefalt01" required>
+                        <select class="form-select form-select-sm" id="validationCustom01" required>
                             <option selected value="">Tipo de venta</option>
                             <option value="1">Financiada</option>
                             <option value="2">Total</option>
@@ -186,13 +186,13 @@
                 <div class="row mt-4 justify-content-center">
                     <label for="validationDefault02" class="form-label text-center col-lg-2">% de comisión:</label>
                     <div class="col-9">
-                        <input type="number" class="form-control form-control-sm" id="colFormLabelSm validationDefault02" required>
+                        <input type="number" class="form-control form-control-sm" id="validationCustom01" required>
                     </div>
                 </div>
                 <div class="row mt-4 justify-content-center">
                     <label for="validationDefault03" class="form-label text-center col-lg-2">Moneda:</label>
                     <div class="col-9">
-                        <select class="form-select form-select-sm" id="validationDefault03" required>
+                        <select class="form-select form-select-sm" id="validationCustom01" required>
                             <option selected disabled value="">Moneda</option>
                             <option value="1">Pesos argentinos</option>
                             <option value="2">Dolares</option>
@@ -203,7 +203,7 @@
                 <div class="row mt-4 justify-content-center">
                     <label for="validationDefault04" class="form-label text-center col-lg-2">Total:</label>
                     <div class="col-9">
-                        <input type="number" class="form-control form-control-sm" id="colFormLabelSm validationDefault04" required>
+                        <input type="number" class="form-control form-control-sm" id="validationCustom01" required>
                     </div>
                 </div>
                 <fieldset class="row justify-content-center mb-3 mt-4">
@@ -225,7 +225,7 @@
                 </fieldset>
                 <div class="row mt-4">
                     <div class="col text-center">
-                        <button class="btn btn-primary" type="submit" data-bs-toggle="modal" data-bs-target="#Imprimir">Asentar pago</button>
+                        <button class="btn" id="boton" type="submit" data-bs-toggle="modal" data-bs-target="#Imprimir">Asentar pago</button>
                     </div>
                 </div>
             </form>
@@ -235,17 +235,17 @@
             <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Desea ver el comprobante</h5>
+                <h5 class="modal-title col text-center" id="exampleModalLabel">Desea ver el comprobante</h5>
                 <a href="Principal.html">
                     <button type="button" class="btn-close" aria-label="Close"></button>
                 </a>
                 </div>
                 <div class="modal-footer">
-                    <a href="Principal.html">
-                        <button type="button" class="btn btn-secondary">No</button>
+                    <a href="Principal.html" class="btn col text-center" id="boton">
+                        <button type="button" class="btn">No</button>
                     </a>
-                    <a href="../Informes/ComprobanteVenta.pdf" target="_blank">
-                        <button type="button" class="btn btn-primary">Si</button>
+                    <a href="../Informes/ComprobanteVenta.pdf" target="_blank" class="btn col text-center" id="boton">
+                        <button type="button" class="btn">Si</button>
                     </a>
                 </div>
             </div>

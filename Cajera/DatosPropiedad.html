@@ -74,7 +74,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Una entrada</h5>
+          <h5 class="modal-title col text-center" id="exampleModalLabel">Una entrada</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form>
@@ -82,29 +82,29 @@
             <div class="row justify-content-center mt-3">
                 <label for="Fecha" class="col-sm-2 col-form-label col-form-label-sm">Fecha</label>
                 <div class="col-sm">
-                    <input type="date" class="form-control form-control-sm" id="colFormLabelSm" placeholder="DD/MM/AAAA">
+                    <input type="date" class="form-control form-control-sm" id="validationCustom01" placeholder="DD/MM/AAAA">
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <label for="Hora" class="col-sm-2 col-form-label col-form-label-sm">Hora</label>
                 <div class="col-sm">
-                    <input type="time" class="form-control form-control-sm" id="colFormLabelSm" placeholder="00:00">
+                    <input type="time" class="form-control form-control-sm" id="validationCustom01" placeholder="00:00">
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <label for="concepto" class="col-sm-2 col-form-label col-form-label-sm">Concepto</label>
                 <div class="col-sm">
-                    <input type="text" class="form-control form-control-sm" id="colFormLabelSm" required>
+                    <input type="text" class="form-control form-control-sm" id="validationCustom01" required>
                 </div>
             </div>
             <div class="row justify-content-center mt-3">
                 <label for="monto" class="col-sm-2 col-form-label col-form-label-sm">Monto</label>
                 <div class="col-sm">
-                    <input type="number" class="form-control form-control-sm" id="colFormLabelSm" required>
+                    <input type="number" class="form-control form-control-sm" id="validationCustom01" required>
                 </div>
             </div>
             <div class="row mt-3">
-                <select class="form-select form-select-sm" id="validationDefault03" required>
+                <select class="form-select form-select-sm" id="validationCustom01" required>
                     <option selected disabled value="">Tipo</option>
                     <option value="1">Entrada</option>
                     <option value="2">Salida</option>
@@ -112,126 +112,121 @@
             </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          <button type="submit" class="btn btn-primary">Guardar</button>
+          <button type="button" class="btn col text-center" id="boton" data-bs-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn col text-center" id="boton">Guardar</button>
         </div>
         </form>
       </div>
     </div>
   </div>
     <!-- Cuerpo --> 
-    <div class="container-fluid">
-      <style>
-        select {position: relative; top: 5px;}
-      </style>
-      <div class="container">
-        <!--Primera fila-->
-        <div class="row mt-5">
-          <div class="col-lg-6">
-            <img src="https:/via.placeholder.com/500x300/" class="card-img" alt="...">
-          </div>
-          <div class="col-lg-6">
-            <h2><b>Una casa mediana</b></h2>
+    <div class="container">
+      <!--Primera fila-->
+      <div class="row">
+        <div class="col-lg-6">
+          <img src="https:/via.placeholder.com/500x300/" class="card-img" alt="...">
+        </div>
+        <div class="col-lg-6">
+          <h2><b>Una casa mediana</b></h2>
+          <br>
+          <div class="col-sm">
+            <h4>Codigo Inmueble: 1251</h4>
+            <h4>Tipo de Inmueble: Casa</h4>
+            <h4>Opciones de contrato: Venta</h4>
+            <h4>Cantidad de ambientes: 5</h4>
             <br>
-            <div class="col-sm">
-              <h4>Codigo Inmueble: 1251</h4>
-              <h4>Tipo de Inmueble: Casa</h4>
-              <h4>Opciones de contrato: Venta</h4>
-              <h4>Cantidad de ambientes: 5</h4>
-              <br>
-              <div class="row text-start">
-                <div class="col-md-4">
-                  <h4>Dormitorios: 2</h4>
-                </div>
-                <div class="col-md-3">
-                  <h4>Baños: 1</h4>
-                </div>
-                <div class="col-md-5">
-                  <h4>Precio: $2.000.000</h4>
-                </div>
+            <div class="row text-start">
+              <div class="col-md-4">
+                <h4>Dormitorios: 2</h4>
               </div>
-              <br>
-              <h4>Direccion: Av. San Maritn 856, Resistencia, Chaco</h4>
-              <div class="row">
-                <div class="col text-center">
-                  <a href="https://www.google.com/maps/place/Av.+San+Mart%C3%ADn+856,+H3504EJA+Resistencia,+Chaco/@-27.4615719,-58.9920113,17z/data=!3m1!4b1!4m5!3m4!1s0x94450c9333b63f87:0xc284443d177f5cb3!8m2!3d-27.4615719!4d-58.9898226" target="_blank" role="button" class="bnt btn-link text-dark">Ver mapa</a>
-                </div>
+              <div class="col-md-3">
+                <h4>Baños: 1</h4>
+              </div>
+              <div class="col-md-5">
+                <h4>Precio: $2.000.000</h4>
+              </div>
+            </div>
+            <br>
+            <h4>Direccion: Av. San Maritn 856, Resistencia, Chaco</h4>
+            <div class="row">
+              <div class="col text-center">
+                <a href="https://www.google.com/maps/place/Av.+San+Mart%C3%ADn+856,+H3504EJA+Resistencia,+Chaco/@-27.4615719,-58.9920113,17z/data=!3m1!4b1!4m5!3m4!1s0x94450c9333b63f87:0xc284443d177f5cb3!8m2!3d-27.4615719!4d-58.9898226" target="_blank" role="button" class="bnt btn-link text-dark">Ver mapa</a>
               </div>
             </div>
           </div>
         </div>
-        <br>
-        <!--Segunda fila-->
-        <div class="conteiner">
-          <div class="row">
-            <div class="col-md-1">
-              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
-            </div>
-            <div class="col-md-1">
-              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
-            </div>
-            <div class="col-md-1">
-              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
-            </div>
-            <div class="col-md-1">
-              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
-            </div>
-            <div class="col-md-1">
-              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
-            </div>
-            <div class="col-md-1">
-              <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
-            </div>
-            <div class="col-sm-3">
-              <h5>Propietario: Pepe Argento</h5>
-              <h5>Nro. Propietario: 0180</h5>
-              <h5>Tipo: Particular</h5>
-            </div>
-            <div class="col-sm-3">
-              <h5>DNI Propietario: 35.489.612</h5>
-              <h5>teléfono: 0362-123456</h5>
-              <h5>Email: elpropietario@gmail.com</h5>
-            </div>
-          </div>
-        </div>
-        <br>
-        <!--Otras Propiedades-->
-        <div class="text-center">
-          <h1>Otras Propiedades</h1>
-        </div>
-        <br> 
+      </div>
+      <br>
+      <!--Segunda fila-->
+      <div class="conteiner">
         <div class="row">
-          <div class="col-sm">
-            <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark" height="200" width="200">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
-            </div>
+          <div class="col-md-1">
+            <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
           </div>
-          <div class="col-sm">
-            <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark" height="200" width="200">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
-            </div>
+          <div class="col-md-1">
+            <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
           </div>
-          <div class="col-sm">
-            <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark" height="200" width="200">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
-            </div>
+          <div class="col-md-1">
+            <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
           </div>
-          <div class="col-sm">
-            <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark" height="200" width="200">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
-            </div>
+          <div class="col-md-1">
+            <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+          </div>
+          <div class="col-md-1">
+            <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+          </div>
+          <div class="col-md-1">
+            <img src="https:/via.placeholder.com/50x50/" class="card-img" alt="...">
+          </div>
+          <div class="col-sm-3">
+            <h5>Propietario: Pepe Argento</h5>
+            <h5>Nro. Propietario: 0180</h5>
+            <h5>Tipo: Particular</h5>
+          </div>
+          <div class="col-sm-3">
+            <h5>DNI Propietario: 35.489.612</h5>
+            <h5>teléfono: 0362-123456</h5>
+            <h5>Email: elpropietario@gmail.com</h5>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!--Otras Propiedades-->
+      <div class="text-center">
+        <h1>Otras Propiedades</h1>
+      </div>
+      <br> 
+      <div class="row">
+        <div class="col-sm">
+          <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark" height="200" width="200">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
+          </div>
+        </div>
+        <div class="col-sm">
+          <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark" height="200" width="200">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
+          </div>
+        </div>
+        <div class="col-sm">
+          <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark" height="200" width="200">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
+          </div>
+        </div>
+        <div class="col-sm">
+          <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark" height="200" width="200">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="DatosPropiedad.html" class="btn btn-light font-weight-bold border border-dark" style="background-color:rgb(211, 84, 0)">Go somewhere</a>
           </div>
         </div>
       </div>

@@ -76,7 +76,7 @@
         <!--Calendario-->
         <div class="col text-center">
           <label for="Fecha" class="col-sm-1">Fecha</label>
-          <input type="date" placeholder="DD/MM/AAAA">
+          <input type="date" placeholder="DD/MM/AAAA" id="validationCustom01">
         </div>
       </div>
       <br>
@@ -139,14 +139,15 @@
           </table>
         </div>
       </div>
-      <hr size="15">
-      <div class="row mt-5"> <!--Agregar una cita-->
+      <hr class="mt-5 mb-5">
+      <div class="row"> <!--Agregar una cita-->
         <div class="col text-center">
-          <a href="#Citas" class="btn btn-primary">Agendar cita</a>
+          <a href="#Citas" class="btn" id="boton">Agendar cita</a>
         </div>
       </div>
+      <hr class="mt-5 mb-5" id="Citas">
       <div class="row mt-5">
-        <h1 id="Citas" class="text-center">Agendar una cita</h1>
+        <h1 class="text-center">Agendar una cita</h1>
         <div class="accordion" id="accordion">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
@@ -156,24 +157,22 @@
             </h2>
             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
               <div class="accordion-body"> <!--Datos del cliente nuevo-->
-                <form class="row g-3">
+                <form class="row g-3" action="#horarios">
                   <div class="row mt-3">
                     <label for="validationServer01" class="form-label col-lg-2">Nombre del cliente</label>
-                    <input type="text" class="form-control form-control-sm col" id="validationServer01" placeholder="Nombre" required>
+                    <input type="text" class="form-control form-control-sm col" id="validationCustom01" placeholder="Nombre" required>
                   </div>
                   <div class="row mt-3">
                     <label for="validationServer01" class="form-label col-lg-2">Teléfono del cliente</label>
-                    <input type="number" class="form-control form-control-sm col" id="validationServer01" placeholder="Teléfono" required>
+                    <input type="number" class="form-control form-control-sm col" id="validationCustom01" placeholder="Teléfono" required>
                   </div>
                   <div class="row mt-3">
                     <label for="validationServer01" class="form-label col-lg-2">Email del cliente</label>
-                    <input type="email" class="form-control form-control-sm col" id="validationServer01" placeholder="Email" required>
+                    <input type="email" class="form-control form-control-sm col" id="validationCustom01" placeholder="Email" required>
                   </div>
                   <div class="row mt-3">
                     <div class="col text-center">
-                      <a href="#horarios">
-                        <button class="btn btn-success" type="submit">Guardar</button>
-                      </a>
+                      <button class="btn" id="boton" type="submit">Guardar</button>
                     </div>
                   </div>
                 </form>
@@ -191,36 +190,36 @@
                 <form class="row g-3">
                   <div class="row mt-3">
                     <label for="validationServer01" class="form-label col-lg-2">Nombre del cliente</label>
-                    <input type="text" class="form-control form-control-sm col" id="validationServer01" placeholder="Nombre" required>
+                    <input type="text" class="form-control form-control-sm col" id="validationCustom01" placeholder="Nombre" required>
                   </div>
                   <div class="row mt-3">
                     <label for="validationServer01" class="form-label col-lg-2">Apellido del cliente</label>
-                    <input type="text" class="form-control form-control-sm col" id="validationServer01" placeholder="Apellido" required>
+                    <input type="text" class="form-control form-control-sm col" id="validationCustom01" placeholder="Apellido" required>
                   </div>
                   <div class="row mt-3">
                     <div class="col text-center">
                       <a href="#resultBusqueda">
-                        <button class="btn btn-success" type="submit">Buscar</button>
+                        <button class="btn" id="boton" type="submit">Buscar</button>
                       </a>
                     </div>
                   </div>
                 </form>
-                <br>
+                <hr class="mt-5 mb-5">
                 <form class="row g-3">
                   <div class="row mt-3">
                     <label for="validationServer01" class="form-label col-lg-2">Número del cliente</label>
-                    <input type="number" class="form-control form-control-sm col" id="validationServer01" placeholder="Número" required>
+                    <input type="number" class="form-control form-control-sm col" id="validationCustom01" placeholder="Número" required>
                   </div>
                   <div class="row mt-3">
                     <div class="col text-center">
                       <a href="#resultBusqueda">
-                        <button class="btn btn-success" type="submit">Buscar</button>
+                        <button class="btn" id="boton" type="submit">Buscar</button>
                       </a>
                     </div>
                   </div>
                 </form>
-                <hr size="15">
-                <div class="row mt-5" id="resultBusqueda">
+                <hr class="mt-5 mb-5" id="resultBusqueda">
+                <div class="row mt-5">
                   <h1 class="text-center">Datos encontrados</h1>
                   <div class="col-sm">
                     <h6>Apellido y Nombre</h6>
@@ -238,7 +237,7 @@
                 </div>
                 <div class="row mt-3">
                   <div class="col text-center">
-                    <a href="#horarios" class="btn btn-primary">Continuar</a>
+                    <a href="#horarios" class="btn" id="boton">Continuar</a>
                   </div>
                 </div>
               </div>
@@ -247,11 +246,12 @@
         </div>
       </div>
       <div class="row mt-5">
-        <hr size="15">
-        <h1 id="horarios" class="text-center">Horarios disponibles</h1>
+        <hr class="mt-5 mb-5" id="horarios">
+        <h1 class="text-center mb-3">Horarios disponibles</h1>
+
         <div class="col text-center">
             <label for="Fecha" class="col-sm-1">Fecha</label>
-            <input type="date" placeholder="DD/MM/AAAA">
+            <input type="date" placeholder="DD/MM/AAAA" id="validationCustom01">
         </div>
     </div>
     <div class="row mt-5">
@@ -273,7 +273,7 @@
                     <td>10:00</td>
                     <td>Agente 1</td>
                     <td>
-                        <a href="Principal.html" type="submit" class="btn btn-success" onclick="Alerta()">Agregar cita</a>
+                        <a href="Principal.html" type="submit" class="btn" id="boton" onclick="Alerta()">Agregar cita</a>
                     </td>
                 </tr>
                 <!--Fila 2-->
@@ -282,7 +282,7 @@
                     <td>10:00</td>
                     <td>Agente 2</td>
                     <td>
-                        <a href="Principal.html" type="submit" class="btn btn-success" onclick="Alerta()">Agregar cita</a>
+                        <a href="Principal.html" type="submit" class="btn" id="boton" onclick="Alerta()">Agregar cita</a>
                     </td>
                 </tr>
                 <!--Fila 3-->
@@ -291,7 +291,7 @@
                     <td>10:30</td>
                     <td>Agente 3</td>
                     <td>
-                        <a href="Principal.html" type="submit" class="btn btn-success" onclick="Alerta()">Agregar cita</a>
+                        <a href="Principal.html" type="submit" class="btn" id="boton" onclick="Alerta()">Agregar cita</a>
                     </td>
                 </tr>
             </tbody>

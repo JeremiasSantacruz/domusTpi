@@ -85,9 +85,9 @@
         <h1 class="text-center">Listado historico de clientes</h1>
         <div class="row mt-4 justify-content-center">
             <div class="col text-center">
-                <a href="Actuales.html" type="submit" class="btn btn-primary">Actuales</a>
-                <a href="Antiguos.html" type="submit" class="btn btn-primary">Antiguos</a>
-                <a href="ClientesHistorico.html" type="submit" class="btn btn-primary">Historico</a>
+                <a href="Actuales.html" type="submit" class="btn" id="boton">Actuales</a>
+                <a href="Antiguos.html" type="submit" class="btn" id="boton">Antiguos</a>
+                <a href="ClientesHistorico.html" type="submit" class="btn" id="boton">Historico</a>
             </div>
         </div>
         <br>
@@ -116,7 +116,7 @@
                         <td>0362-753219</td>
                         <td>titof@gmail.com</td>
                         <td>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
+                            <button class="btn" id="boton" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
                         </td>
                     </tr>
                     <!--Fila 2--> 
@@ -127,7 +127,7 @@
                         <td>0362-965723</td>
                         <td>juan@hotmail.com</td>
                         <td>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
+                            <button class="btn" id="boton" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
                         </td>
                     </tr> 
                     <!--Fila 3--> 
@@ -138,7 +138,7 @@
                         <td>0362-745126</td>
                         <td>donramon@gmail.com</td>
                         <td>
-                            <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
+                            <button class="btn" id="boton" data-bs-toggle="modal" data-bs-target="#Detalles">Detalles</button>
                         </td>
                     </tr>
                 </tbody>
@@ -147,7 +147,7 @@
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Detalles del movimiento</h5>
+                      <h5 class="modal-title col text-center" id="exampleModalLabel">Detalles del movimiento</h5>
                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
@@ -162,7 +162,7 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn col text-center" id="boton" data-bs-dismiss="modal">Cerrar</button>
                     </div>
                   </div>
                 </div>

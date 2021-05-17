@@ -70,13 +70,13 @@
     <div class="container">
         <div class="row">
             <div class="col-md text-center">
-                <a href="#newCli" class="btn btn-primary">Nuevo cliente particular</a>
+                <a href="#newCli" class="btn" id="boton">Nuevo cliente particular</a>
             </div>
             <div class="col-md text-center">
-                <a href="#newCliCor" class="btn btn-primary">Nuevo cliente corporativo</a>
+                <a href="#newCliCor" class="btn" id="boton">Nuevo cliente corporativo</a>
             </div>
             <div class="col-md text-center">
-                <a href="#ActualizarD" class="btn btn-primary">Actualizar datos</a>
+                <a href="#ActualizarD" class="btn" id="boton">Actualizar datos</a>
             </div>
         </div>
         <hr class="mt-5 mb-5" id="newCli" >
@@ -86,41 +86,41 @@
                 <form action="Principal.html" class="needs-validation" novalidate>
                     <div class="row align-items-center mt-4" >
                         <label for="NombreYApellido" class="col-lg-3" >Nombre y Apellido:</label>
-                        <input type="text" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01" required>
+                        <input type="text" class="form-control col" id="validationCustom01" required>
                         <div class="invalid-feedback">Ingrese un nombre y apellido</div>
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="dni" class="col-lg-3">DNI:</label>
-                        <input type="number" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01" required>
+                        <input type="number" class="form-control col" id="validationCustom01" required>
                         <div class="invalid-feedback">Ingrese un número de documento</div>
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="cuil" class="col-lg-3">CUIL:</label>
-                        <input type="number" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01" required>
+                        <input type="number" class="form-control col" id="validationCustom01" required>
                         <div class="invalid-feedback">Ingrese un número de CUIL</div>
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="fecha" class="col-lg-3">Fecha de nacimiento:</label>
-                        <input type="date" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01" required>
+                        <input type="date" class="form-control col" id="validationCustom01" required>
                         <div class="invalid-feedback">Ingrese su fecha de nacimiento</div>
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="teléfono" class="col-lg-3">Teléfono:</label>
-                        <input type="tel" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01" required>
+                        <input type="tel" class="form-control col" id="validationCustom01" required>
                         <div class="invalid-feedback">Ingrese un número de teléfono</div>
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="email" class="col-lg-3">Email:</label>
-                        <input type="email" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01" required>
+                        <input type="email" class="form-control col" id="validationCustom01" required>
                         <div class="invalid-feedback">Ingrese un correo</div>
                     </div>
                     <hr class="mt-5 mb-5">
                     <div class="row justify-content-center">
                         <label class="input-group-text col-3" for="inputGroupFile">Subir Archivos</label>
-                        <input type="file" class="form-control col" id="inputGroupFile" style="background:rgb(112, 123, 124 );" multiple>
+                        <input type="file" class="form-control col" id="validationCustom01" multiple>
                     </div>
                     <div class="row mt-5 justify-content-center" id="newCliCor">
-                        <button class="btn btn-success col-2" type="submit">Guardar</a>
+                        <button class="btn col-2" id="boton" type="submit">Guardar</a>
                     </div>
                 </form>
             </div>
@@ -132,46 +132,46 @@
                 <form action="Principal.html" class="needs-validation" novalidate>
                     <div class="row align-items-center mt-4" >
                         <label for="NombreYApellido" class="col-lg-3" >Razón social:</label>
-                        <input type="text" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01" required>
+                        <input type="text" class="form-control col" id="validationCustom01" required>
                         <div class="invalid-feedback">Ingrese la razón social</div>
                     </div>
                     <div class="row align-items-center mt-4" >
                         <label for="NombreYApellido" class="col-lg-3" >Nombre y Apellido:</label>
-                        <input type="text" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01" required>
+                        <input type="text" class="form-control col" id="validationCustom01" required>
                         <div class="invalid-feedback">Ingrese un nombre y apellido</div>
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="cuil" class="col-lg-3">CUIT:</label>
-                        <input type="number" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01" required>
+                        <input type="number" class="form-control col" id="validationCustom01" required>
                         <div class="invalid-feedback">Ingrese un número de CUIT</div>
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="teléfono" class="col-lg-3">Teléfono:</label>
-                        <input type="tel" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01" required>
+                        <input type="tel" class="form-control col" id="validationCustom01" required>
                         <div class="invalid-feedback">Ingrese un número de teléfono</div>
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="email" class="col-lg-3">Email:</label>
-                        <input type="email" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01" required>
+                        <input type="email" class="form-control col" id="validationCustom01" required>
                         <div class="invalid-feedback">Ingrese un correo</div>
                     </div>
                     <div class="row align-items-center mt-4" >
                         <label for="NombreYApellido" class="col-lg-3" >Dirección de la oficina:</label>
-                        <input type="text" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01" required>
+                        <input type="text" class="form-control col" id="validationCustom01" required>
                         <div class="invalid-feedback">Ingrese un nombre y apellido</div>
                     </div>
                     <div class="row align-items-center mt-4" >
                         <label for="NombreYApellido" class="col-lg-3" >Agente a cargo:</label>
-                        <input type="text" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01" required>
+                        <input type="text" class="form-control col" id="validationCustom01" required>
                         <div class="invalid-feedback">Ingrese un nombre y apellido</div>
                     </div>
                     <hr class="mt-5 mb-5">
                     <div class="row justify-content-center">
                         <label class="input-group-text col-3" for="inputGroupFile">Subir Archivos</label>
-                        <input type="file" class="form-control col" id="inputGroupFile" style="background:rgb(112, 123, 124 );" multiple>
+                        <input type="file" class="form-control col" id="validationCustom01" multiple>
                     </div>
                     <div class="row mt-5 justify-content-center" id="ActualizarD">
-                        <button class="btn btn-success col-2" type="submit">Guardar</a>
+                        <button class="btn col-2" id="boton" type="submit">Guardar</a>
                     </div>
                 </form>
             </div>
@@ -185,16 +185,16 @@
                 <form class="row needs-validation" novalidate>
                     <div class="row align-items-center mt-3">
                       <label for="validationServer01" class="form-label col-lg-3">Nombre del cliente</label>
-                      <input type="text" class="form-control form-control-sm col" id="validationServer01" placeholder="Nombre" style="background:rgb(112, 123, 124 );" required>
+                      <input type="text" class="form-control form-control-sm col" id="validationCustom01" placeholder="Nombre" required>
                     </div>
                     <div class="row align-items-center mt-3">
                       <label for="validationServer01" class="form-label col-lg-3">Apellido del cliente</label>
-                      <input type="text" class="form-control form-control-sm col" id="validationServer01" placeholder="Apellido" style="background:rgb(112, 123, 124 );" required>
+                      <input type="text" class="form-control form-control-sm col" id="validationCustom01" placeholder="Apellido" required>
                     </div>
                     <div class="row mt-3">
                       <div class="col text-center">
                         <a href="#resultBusqueda">
-                          <button class="btn btn-success" type="submit">Buscar</button>
+                          <button class="btn" id="boton" type="submit">Buscar</button>
                         </a>
                       </div>
                     </div>
@@ -203,12 +203,12 @@
                 <form class="row needs-validation" novalidate>
                     <div class="row align-items-center mt-3">
                       <label for="validationServer01" class="form-label col-lg-3">Número del cliente</label>
-                      <input type="number" class="form-control form-control-sm col" id="validationServer01" placeholder="Número" style="background:rgb(112, 123, 124 );" required>
+                      <input type="number" class="form-control form-control-sm col" id="validationCustom01" placeholder="Número" required>
                     </div>
                     <div class="row mt-3">
                       <div class="col text-center">
                         <a href="#resultBusqueda">
-                          <button class="btn btn-success" type="submit">Buscar</button>
+                          <button class="btn" id="boton" type="submit">Buscar</button>
                         </a>
                       </div>
                     </div>
@@ -235,51 +235,51 @@
                 <form action="Principal.html" class="needs-validation" novalidate>
                     <div class="row align-items-center mt-4" >
                         <label for="NombreYApellido" class="col-lg-3" >Nombre y Apellido:</label>
-                        <input type="text" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01">
+                        <input type="text" class="form-control col" id="validationCustom01">
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="dni" class="col-lg-3">DNI:</label>
-                        <input type="number" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01">
+                        <input type="number" class="form-control col" id="validationCustom01">
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="cuil" class="col-lg-3">CUIL:</label>
-                        <input type="number" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01">
+                        <input type="number" class="form-control col" id="validationCustom01">
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="fecha" class="col-lg-3">Fecha de nacimiento:</label>
-                        <input type="date" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01">
+                        <input type="date" class="form-control col" id="validationCustom01">
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="teléfono" class="col-lg-3">Teléfono:</label>
-                        <input type="tel" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01">
+                        <input type="tel" class="form-control col" id="validationCustom01">
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="email" class="col-lg-3">Email:</label>
-                        <input type="email" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01">
+                        <input type="email" class="form-control col" id="validationCustom01">
                     </div>
                     <div class="row align-items-center mt-4" >
                         <label for="NombreYApellido" class="col-lg-3" >Razón social:</label>
-                        <input type="text" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01">
+                        <input type="text" class="form-control col" id="validationCustom01">
                     </div>
                     <div class="row align-items-center mt-4">
                         <label for="cuil" class="col-lg-3">CUIT:</label>
-                        <input type="number" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01">
+                        <input type="number" class="form-control col" id="validationCustom01">
                     </div>
                     <div class="row align-items-center mt-4" >
                         <label for="NombreYApellido" class="col-lg-3" >Dirección de la oficina:</label>
-                        <input type="text" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01">
+                        <input type="text" class="form-control col" id="validationCustom01">
                     </div>
                     <div class="row align-items-center mt-4" >
                         <label for="NombreYApellido" class="col-lg-3" >Agente a cargo:</label>
-                        <input type="text" class="form-control col" style="background:rgb(112, 123, 124 );" id="validationCustom01">
+                        <input type="text" class="form-control col" id="validationCustom01">
                     </div>
                     <hr class="mt-5 mb-5">
                     <div class="row justify-content-center">
                         <label class="input-group-text col-3" for="inputGroupFile">Subir Archivos</label>
-                        <input type="file" class="form-control col" id="inputGroupFile" style="background:rgb(112, 123, 124 );" multiple>
+                        <input type="file" class="form-control col" id="validationCustom01" multiple>
                     </div>
                     <div class="row mt-5 justify-content-center">
-                        <button class="btn btn-success col-2" type="submit" onclick="alert('Datos guardados exitosamente')">Guardar</a>
+                        <button class="btn col-2" id="boton" type="submit" onclick="alert('Datos guardados exitosamente')">Guardar</a>
                     </div>
                 </form>
             </div>
