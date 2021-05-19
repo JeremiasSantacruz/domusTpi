@@ -40,4 +40,7 @@ ul{
   display: inline-block;
   padding: 5px;
 }
-
+#boton {
+  background: rgb(186, 74, 0);
+  color: black;
+  border: rgb(186, 74, 0);}
