@@ -1,9 +1,4 @@
  nav{
-<<<<<<< HEAD
-
-=======
-  background:rgb(144, 144, 151);
->>>>>>> 774db713e80dcf67b0b5962ca078c1f15668e534
   height: 100px;
   }
 #cabeza{
@@ -95,7 +90,7 @@ footer label{
 
 footer .contactos{
   position: relative;
-  top:300px;
+  top:50px;
 }
 
 section {
