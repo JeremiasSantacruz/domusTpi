@@ -84,9 +84,20 @@ header nav {
   position: relative;
   top:3px;
 }
+
 .container h1 {
   position: relative;
   bottom: 88px;
+}
+
+.separador {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#separador {
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 /*.resultados{
   position: relative;
