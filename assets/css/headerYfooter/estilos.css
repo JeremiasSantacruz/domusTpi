@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body{
   display: grid;
   grid-template-rows: auto auto auto auto;
@@ -48,14 +48,13 @@ header .container-fluid{
 header nav {
   position: relative;
   bottom: 7px;
-=======
+}
  nav{
   height: 100px;
   }
 #cabeza{
   margin: 5px;
   padding: 5px;
->>>>>>> d8e399b16bb9f4bc940e75306a437cd84c44434e
 }
 
 #ButtonUser{
