@@ -11,61 +11,59 @@
     </head>
     
 
-    
-
     <body>
-
       <header>
-        <nav class="navbar navbar justify-content-center fixed-top navbar-expand-lg navbar-light">
-            <div class="logo">
-              <img src="../Imagenes/Logo.png" class="img-thumbnail mt-1 offset-4 rounded-circle" alt="..." height="70" width="70">
-            </div> 
-            <div class="container-fluid">
-              <a class="navbar-brand offset-4 font-weight-bold" href="Principal.html">PRINCIPAL</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="navbar-brand offset-2 font-weight-bold" href="Inmuebles.html">INMUEBLES</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle font-weight-bold offset-4 nav-link active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 18px;">
-                      TAREAS
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item font-weight-bold" href="Agenda.html">Agenda</a></li>
-                      <li><a class="dropdown-item font-weight-bold" href="carga.html">Nueva propiedad</a></li>
-                    </ul>
-                  </li>
-                </ul>
+        <div class="container-fluid">
+          <div class="user-header">
+            <ul>
+              <li>
+                <div class="container-fluid d-flex justify-content-start" id="cabeza">
+                  <p class="d-flex justify-content-center" style="font-family:Cambria">
+                    <img src="../Imagenes/Logo.png" class="img-fluit mt-1 offset-4 rounded-circle " alt="..." width="45">
+                    <strong>Domus</strong>
+                  </p>
+                </div>
+              </li>
+              <li class="column mt-3">
+                <div class="dropdown d-flex justify-content-end">
+                  <button class="btn btn-primary text-dark dropdown-toggle font-weight-bold" type="button" id="ButtonUser" data-bs-toggle="dropdown" aria-expanded="false">
+                    Usuario
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="../internauta/Principal.html">Salir</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="main-header">
+          <li class="row">
+            <nav class="navbar navbar-expand-lg navbar-light" >
+             <a class="navbar-brand btn-lg font-weight-bold" href="Principal.html" id="ButtonNav">Principal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active btn-lg font-weight-bold" href="Inmuebles.html" id="ButtonNav">Catálogo<span class="sr-only">(current)</span></a>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle text-dark btn-lg font-weight-bold" type="button" id="dropTarea" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tareas
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <a class="dropdown-item" href="Agenda.html">Agenda</a>
+                    <a class="dropdown-item" href="carga.html">Nueva propiedad</a>
+                    <button class="dropdown-item" type="button">Something else here</button>
+                  </div>
+                </div>
+                <a class="nav-item nav-link btn-lg font-weight-bold" href="#" id="ButtonNav">Pricing</a>
               </div>
             </div>
-            <div class="usuario">
-              <ul>
-                <li>
-                 <div class="row-3 offset-3">
-                   <img src="../Imagenes/perfil.png" alt="..." width = 30 height = 30>
-                 </div>
-                </li>
-                <li>
-                 <div class="dropdown">
-                   <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:16px;">
-                     Usuario
-                   </button>
-                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                     <li><a class="dropdown-item" href="#">Configuración</a></li>
-                     <li><a class="dropdown-item" href="../internauta/Principal.html">Salir</a></li>
-                   </ul>
-                 </div>
-                 </li>
-              </ul>
-    
-            </div>
-        </nav>
-     </header>
-
+          </nav>
+         </li>
+          </div>
+       </div>
+      </header>  
       <div class="container">
         <div class="row offset-2 col-md-8 "> <!--fila 1-->
           <div class="col-sm">

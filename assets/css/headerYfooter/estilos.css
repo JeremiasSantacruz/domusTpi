@@ -1,23 +1,63 @@
- nav{
-<<<<<<< HEAD
-
-=======
-  background:rgb(144, 144, 151);
->>>>>>> 774db713e80dcf67b0b5962ca078c1f15668e534
-  height: 100px;
-  }
-#cabeza{
-  margin: 5px;
-  padding: 5px;
+body{
+  display: grid;
+  grid-template-rows: auto auto auto auto;
 }
+
+
+header .container-fluid{
+  display: grid;  
+  grid-template-rows: auto auto;
+}
+.user-header{
+  background: rgb(230, 126,34);
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.internauta-header{
+  background: rgb(230, 126,34);
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
+  display:flex;
+}
+.internauta-header .entrada{
+  display: grid;
+  grid-template-rows: 50% auto;
+  padding: 3px;
+  margin: 2px;
+}
+.internauta-header .elemento{
+  display: flex;
+  flex-wrap: wrap;
+}
+.internauta-header .elemento #botonInicio{
+  background: rgb(230, 126, 34);
+  color: black;
+  border: rgb(186, 74, 0);
+}
+.internauta-header .elemento #botonInicio:hover{
+  background: rgb(66, 73, 73);
+  color: black;
+  border: rgb(186, 74, 0);
+}
+header nav {
+  position: relative;
+  bottom: 7px;
+}
+
 #ButtonUser{
   position: relative;
-  bottom: 77px;
+  bottom: 80px;
   margin: 10px;
   background: rgb(230, 126, 34);
   color: black;
   border: rgb(186, 74, 0);
 }
+
 #ButtonNav:hover{
   color:rgb(186, 74, 0) ;
 }
@@ -25,14 +65,12 @@
   color: rgb(186, 74, 0);
 }
 
-header nav {
-  position: relative;
-  bottom: 79px;
-
-}
+ 
 .container{
   position: relative;
-  bottom: 50px;
+  bottom: 5px;
+  display: grid;
+  grid-template-rows: auto auto auto;
 }
 #ButtonAgendah1{
   position: relative;
@@ -42,10 +80,10 @@ header nav {
   position: relative;
   bottom: 88px;
 }
-.resultados{
+/*.resultados{
   position: relative;
   bottom: 50px;
-}
+}*/
 
 .buscador{
   background:url(../../../Imagenes/fondoBuscador.jpg);
@@ -86,7 +124,6 @@ footer .redes{
   position: relative;
   background:rgb(230, 126, 34 ) ;
   height: 100px;
-  width: auto;
 }
 
 footer label{
