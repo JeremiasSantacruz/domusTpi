@@ -4,6 +4,13 @@
     border: none;
     position: relative;
     color: rgb(255, 255, 255);
+    background-color: rgb(112, 123, 124 );
+    border-radius: 10px;
+}
+
+#validationCustom01 {
+    background: rgb(112, 123, 124 );
+    color: #fff;
 }
 
 #botonE {

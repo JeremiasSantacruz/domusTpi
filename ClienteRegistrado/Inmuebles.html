@@ -11,6 +11,7 @@
     <title>Inmuebles</title>
     <!--ESTILOS CSS-->
     <link rel="stylesheet" type="text/css" href="../assets/css/headerYfooter/estilos.css" >
+    <link rel="stylesheet" href="../assets/css/General/Catálogo/EstiloCatalogo.css">
 
   </head>
 
@@ -18,53 +19,53 @@
 
     <body>
       <header>
-        <nav class="navbar navbar justify-content-center fixed-top navbar-expand-lg navbar-light">
-            <div class="logo">
-              <img src="../Imagenes/Logo.png" class="img-thumbnail mt-1 offset-4 rounded-circle" alt="..." height="70" width="70">
-            </div> 
-            <div class="container-fluid">
-              <a class="navbar-brand offset-4 font-weight-bold" href="Principal.html">PRINCIPAL</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="navbar-brand offset-2 font-weight-bold" href="Inmuebles.html">INMUEBLES</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="navbar-brand offset-2 font-weight-bold" href="#">QUIENES SOMOS</a>
-                  </li>
-                </ul>
+        <div class="container-fluid">
+          <div class="user-header">
+            <ul>
+              <li>
+                <div class="container-fluid d-flex justify-content-start" id="cabeza">
+                  <p class="d-flex justify-content-center" style="font-family:Cambria">
+                    <img src="../Imagenes/Logo.png" class="img-fluit mt-1 offset-4 rounded-circle " alt="..." width="45">
+                    <strong>Domus</strong>
+                  </p>
+                </div>
+              </li>
+              <li class="column mt-3">
+                <div class="dropdown d-flex justify-content-end">
+                  <button class="btn btn-primary text-dark dropdown-toggle font-weight-bold" type="button" id="ButtonUser" data-bs-toggle="dropdown" aria-expanded="false">
+                    Usuario
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="../internauta/Principal.html">Salir</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="main-header">
+          <li class="row">
+            <nav class="navbar navbar-expand-lg navbar-light" >
+             <a class="navbar-brand btn-lg font-weight-bold" href="Principal.html" id="ButtonNav">Principal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active btn-lg font-weight-bold" href="Inmuebles.html" id="ButtonNav">Catálogo<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link active btn-lg font-weight-bold" href="#" id="ButtonNav">Quienes somos<span class="sr-only">(current)</span></a>
               </div>
             </div>
-            <div class="usuario">
-              <ul>
-                <li>
-                 <div class="row-3 offset-3">
-                   <img src="../Imagenes/perfil.png" alt="..." width = 30 height = 30>
-                 </div>
-                </li>
-                <li>
-                 <div class="dropdown">
-                   <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" style="font-size:16px;">
-                     Usuario
-                   </button>
-                   <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                     <li><a class="dropdown-item" href="#">Configuración</a></li>
-                     <li><a class="dropdown-item" href="../internauta/Inmuebles.html">Salir</a></li>
-                   </ul>
-                 </div>
-                 </li>
-              </ul>
-    
-            </div>
-        </nav>
-     </header>
+          </nav>
+         </li>
+          </div>
+        </div>
+      </header>
      <div class="container">
+      <h1 class="text-center">Propiedades</h1>
+      <br>
       <div class="row offset-2 col-md-8 "> <!--fila 1-->
         <div class="col-sm">
-          <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark" height="200" width="200">
+          <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -143,16 +144,13 @@
       <br>
       <div class="col text-center">
         <div class="btn-group" role="group">
-          <button class="btn-link">Anterior</button>
-          <button class="btn-link">Siguiente</button>
+          <button class="btn" id="atras">Anterior</button>
+          <button class="btn" id="avanzar">Siguiente</button>
         </div>
       </div>
     </div>
 
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
-     <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
-     <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
-    </body>
+     
     
     <footer>
       <section class="contactos">
@@ -240,6 +238,9 @@
       </section> >  
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="../assets/css/bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script src="../assets/css/bootstrap/js/bootstrap.min.js"></script>
+    </body>
 
 </html>

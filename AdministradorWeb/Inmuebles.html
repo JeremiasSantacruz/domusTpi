@@ -8,7 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!--ESTILOS CSS-->
     <link rel="stylesheet" type="text/css" href="../assets/css/headerYfooter/estilos.css" > 
-    <link rel="stylesheet" type="text/css" href="../assets/css/headerYfooter/entradas.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/General/Catálogo/EstiloCatalogo.css" > 
+    
     </head>
     <body>
       <header>
@@ -61,10 +62,12 @@
           </div>
        </div>
       </header>
-      <div class="container mt-5">
+      <div class="container">
+        <h1 class="text-center">Propiedades</h1>
+        <br>
         <div class="row offset-2 col-md-8"> <!--fila 1-->
           <div class="col-sm">
-            <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark" height="200" width="200">
+            <img src="https:/via.placeholder.com/200x200/" alt="..." class="img-thumbnail rounded mx-auto d-block border border-dark">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -143,8 +146,8 @@
         <br>
         <div class="col text-center">
           <div class="btn-group" role="group">
-            <button class="btn-link">Anterior</button>
-            <button class="btn-link">Siguiente</button>
+            <button class="btn-link" id="atras">Anterior</button>
+            <button class="btn-link" id="avanzar">Siguiente</button>
           </div>
         </div>
       </div>

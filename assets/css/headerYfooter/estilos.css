@@ -81,15 +81,8 @@ header nav {
 
 
 
-.separador {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
 
-#separador {
-  margin-top: 20px;
-  margin-bottom: 30px;
-}
+
 /*.resultados{
   position: relative;
   bottom: 50px;
@@ -123,17 +116,15 @@ section {
     position: relative;
     top: 100px;
 }
-ul{
-  list-style-type: none;
-}
+
 .usuario{
   position: relative;
   right: 80px;
   
 }
 
-#validationCustom01 {
-  background: rgb(112, 123, 124 );
+ul{
+  list-style-type: none;
 }
 
 
