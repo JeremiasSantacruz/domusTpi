@@ -2,8 +2,7 @@ body{
     display: grid;
     grid-template-rows: auto 80% auto;
   }
-  
-  
+  /*
   header .container-fluid{
     display: grid;  
     grid-template-rows: auto auto;
@@ -38,7 +37,7 @@ body{
   #dropTarea:hover{
     color: rgb(186, 74, 0);
   }
-  
+  */
   .container{
     position: relative;
     bottom: 5px;
@@ -46,15 +45,32 @@ body{
     grid-template-rows: auto auto;
     gap: 20pxS;
   }
-  #ButtonAgendah1{
+
+  #input {
+    width: 100%;
+    height: 100%;
+    border: none;
     position: relative;
-    top:3px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(238, 206, 158);
+    border-radius: 10px;
   }
+
+  #botonE {
+    background: rgb(230, 126, 34);
+    color: black;
+    border: rgb(186, 74, 0);
+    position: relative;
+    /*top: 50px;*/
+  }
+
+  table {text-align-last: center;}
+  /*
   .container h1 {
     position: relative;
     bottom: 88px;
   }
-  /*.resultados{
+  .resultados{
     position: relative;
     bottom: 50px;
   }*/
@@ -62,7 +78,7 @@ body{
 
   
  
-  
+  /*
   .anterior {
     position: relative; left: 60px;
   }
@@ -109,7 +125,7 @@ body{
     bottom: 100px;
   }
   
-  table {text-align-last: center;}
+  
   
   #accordionExample{background: rgb(112, 123, 124 );}
   .redes ul{
@@ -119,5 +135,5 @@ body{
     display: inline-block;
     padding: 5px;
   }
-  
+  */
   

@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../assets/css/bootstrap/css/bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!--ESTILOS CSS-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/AgenteInmobilario/estilosAgenda.css" > 
+    <link rel="stylesheet" type="text/css" href="../assets/css/AgenteInmobilario/EstilosAgenda.css">
+    <link rel="stylesheet" href="../assets/css/headerYfooter/estilos.css"> 
     <!--Titulo-->
     <title>Agenda</title>
   </head>
@@ -67,12 +68,12 @@
   </header>  
  <!-- Cuerpo --> 
  <div class="container">
-   <div class="row">
+   <div class="row text-center">
      <!--Calendario-->
-     <div class="col text-center">
-       <label for="Fecha" class="col-1">Fecha</label>
-         <input type="date" placeholder="DD/MM/AAAA" id="validationCustom01">
-     </div>
+      <div class="col">
+        <label for="Fecha" class="col-1">Fecha</label>
+        <input type="date" placeholder="DD/MM/AAAA" id="input" class="col-2">
+      </div>
    </div>
    <br>
    <div class="row">
@@ -99,7 +100,7 @@
            <td>Jose Hernandez 758</td>
            <td>0362-123789</td>
            <td>
-             <select class="form-select" id="boton" aria-label="Default select example">
+             <select class="form-select" id="botonE" aria-label="Default select example">
                <option selected>Pendiente</option>
                <option value="1">Finalizada</option>
                <option value="2">Cancelada</option>
