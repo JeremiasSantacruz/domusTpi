@@ -1,0 +1,13 @@
+.fuente{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.fondo{
+    background: orange;
+    background: linear-gradient(to right,rgb(180, 119, 70),orange);
+}
+
+.bg{
+    background-image: url(../Imagenes/fondo.jpg);
+    background-position: center center;
+}
