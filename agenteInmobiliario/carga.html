@@ -10,50 +10,61 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <!--ESTILOS CSS-->
   <link rel="stylesheet" type="text/css" href="../assets/css/headerYfooter/estilos.css" >
+  <link rel="stylesheet" href="../assets/css/General/Inputs/entradas.css">
 
 </head>
 
 <body>
-  <header>
-    <div class="container-fluid d-flex justify-content-start" id="cabeza">
-        <p class="d-flex justify-content-center" style="font-family:Cambria">
-          <img src="../Imagenes/Logo.png" class="img-fluit mt-1 offset-4 rounded-circle " alt="..." width="45">
-          <strong>Domus</strong>
-        </p>
-       </div>
-      <div class="dropdown d-flex justify-content-end">
-        <button class="btn btn-primary text-dark dropdown-toggle font-weight-bold" type="button" id="ButtonUser" data-bs-toggle="dropdown" aria-expanded="false">
-          Usuario
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
-      <nav class="navbar navbar-expand navbar-light bg-secondary" >
-        <a class="navbar-brand" href="Principal.html" id="ButtonNav">Principal</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="Inmuebles.html" id="ButtonNav">Catálogo<span class="sr-only">(current)</span></a>
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle text-dark" type="button" id="dropTarea" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Tareas
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <a class="dropdown-item" href="Agenda.html">Agenda</a>
-                <a class="dropdown-item" href="carga.html">Nueva propiedad</a>
-                <button class="dropdown-item" type="button">Something else here</button>
+    <header>
+        <div class="container-fluid">
+          <div class="user-header">
+            <ul>
+              <li>
+                <div class="container-fluid d-flex justify-content-start" id="cabeza">
+                  <p class="d-flex justify-content-center" style="font-family:Cambria">
+                    <img src="../Imagenes/Logo.png" class="img-fluit mt-1 offset-4 rounded-circle " alt="..." width="45">
+                    <strong>Domus</strong>
+                  </p>
+                </div>
+              </li>
+              <li class="column mt-3">
+                <div class="dropdown d-flex justify-content-end">
+                  <button class="btn btn-primary text-dark dropdown-toggle font-weight-bold" type="button" id="ButtonUser" data-bs-toggle="dropdown" aria-expanded="false">
+                    Usuario
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="../internauta/Principal.html">Salir</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="main-header">
+          <li class="row">
+            <nav class="navbar navbar-expand-lg navbar-light" >
+             <a class="navbar-brand btn-lg font-weight-bold" href="Principal.html" id="ButtonNav">Principal</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active btn-lg font-weight-bold" href="Inmuebles.html" id="ButtonNav">Catálogo<span class="sr-only">(current)</span></a>
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle text-dark btn-lg font-weight-bold" type="button" id="dropTarea" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Tareas
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                    <a class="dropdown-item" href="Agenda.html">Agenda</a>
+                    <a class="dropdown-item" href="carga.html">Nueva propiedad</a>
+                  </div>
+                </div>
               </div>
             </div>
-            <a class="nav-item nav-link" href="#" id="ButtonNav">Pricing</a>
+          </nav>
+         </li>
           </div>
-        </div>
-      </nav>
-  </header>
+       </div>
+ </header> 
   <div class="container">
      <h1 class="primary" id="ButtonAgendah1">Cargar propiedad</h1>
      <form class="needs-validation">
